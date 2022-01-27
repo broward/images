@@ -1,0 +1,780 @@
+/**
+* VaultWiki 4.0.24 CSS
+* Style: 'Metro', ID: 3
+**/
+
+.vw-floatcontainer:after {
+	clear: both;
+	content: ".";
+	display: block;
+	font-size: 1pt;
+	height: 0;
+	visibility: hidden;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('//www.twingalaxies.com/vault/resources/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0');
+	src: url('//www.twingalaxies.com/vault/resources/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0') format('embedded-opentype'), url('//www.twingalaxies.com/vault/resources/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('//www.twingalaxies.com/vault/resources/fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('//www.twingalaxies.com/vault/resources/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('//www.twingalaxies.com/vault/resources/fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.vw-font-awesome {
+	font-family: FontAwesome;
+}
+
+.vw-inline-prefix {
+	background: #eaeaea none   ;
+	border: 1px solid #dadada;
+	border-radius: 0.5em;
+	color: #3e3e3e;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 0.1em 0.3em;
+}
+
+.vw-ios-clickable * {
+	cursor: pointer;
+}
+
+/* ######## IMAGES ######## */
+
+.vw-img-inline, .vw-img-link {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.vw-img-link {
+	justify-content: center;
+}
+
+.vw-img-image + .vw-img-name {
+	float: right;
+}
+
+.vw-img-center, .vw-img-right, .vw-img-left {
+	display: block !important;
+}
+
+.vw-img-border .vw-img-image {
+	outline: 1px solid #c0c0c0;
+}
+
+.vw-img-wrapper {
+	display: inline-block;
+	text-align: center;
+	max-width: 100%;
+}
+
+.vw-img-image {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.vw-js .vw-img-image.vw-lazy-ctrl {
+	background-color: #fff;
+	background-image: none !important;
+	overflow: hidden;
+	position: relative;
+}
+
+.vw-js .vw-img-image img {
+	display: none;
+}
+
+.vw-js .vw-img-image.vw-lazy-ctrl img {
+	display: block;
+	left: 50%;
+	margin-left: -60px;
+	margin-top: -60px;
+	position: absolute;
+	top: 50%;
+}
+
+div.vw-img-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.vw-img-thumb {
+	display: inline-block;
+}
+
+.vw-img-thumb .vw-img-wrapper, .vw-img-frame .vw-img-wrapper {
+	background: #eaeaea none   ;
+	border: 1px solid #c0c0c0;
+	margin-bottom: 0.5em;
+	padding: 0.2em;
+}
+
+
+.vw-img-thumb.vw-img-right, .vw-img-right .vw-img-wrapper, .vw-gallery-right {
+	float: right;
+}
+
+.vw-img-thumb.vw-img-right, .vw-gallery-right {
+	margin-left: 1em;
+}
+
+.vw-img-right:first-child + .vw-img-right {
+	margin-right: -0.5em;
+}
+
+.vw-img-right + .vw-img-right {
+	margin-left: 0.5em;
+}
+
+
+.vw-img-left, .vw-img-left .vw-img-wrapper, vw-gallery-left {
+	float: left;
+}
+
+.vw-img-left, .vw-gallery-left {
+	margin-right: 1em;
+}
+
+.vw-img-left:first-child + .vw-img-left {
+	margin-left: -0.5em;
+}
+
+.vw-img-left + .vw-img-left {
+	margin-right: 0.5em;
+}
+
+.vw-img-center, vw-gallery-center {
+	text-align: center;
+}
+
+.vw-img-center .vw-img-wrapper, .vw-gallery-center > * {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.vw-img-caption {
+	display: block;
+	font-size: 0.95em;
+	line-height: 1.4em;
+	padding: 0.3em 0.1em 0.1em;
+	text-align: left;
+}
+
+.vw-img-magnify {
+	float: right;
+	width: 15px;
+	height: 11px;
+	background: transparent url(//www.twingalaxies.com/vault/resources/images/magnify-clip.png) no-repeat;
+}
+
+/* non-thumb image on the image's page */
+.vw-attach-infobox {
+	border: 1px solid #d0d0e0;
+	border-radius: 1em;
+	margin: 1em 0;
+	padding: 0.5em;
+}
+
+.vw-attach-infobox img {
+	max-width: 100%;
+}
+
+.vw-attach-infobox-meta {
+	padding-top: 0.5em;
+}
+
+.vw-attach-infobox-meta span {
+	color: #66a;
+}
+
+/* fix for CMS articles */
+.article .vw-img-image { margin: 0; }
+
+.vw-gallery-wrapper {
+	visibility: hidden;
+}
+
+.vw-no-js .vw-gallery-wrapper, .vw-gallery-js.vw-gallery-wrapper {
+	visibility: visible;
+}
+
+.vw-gallery-stylish {
+	background: #000 none   ;
+	border:   ;
+	border-radius: 1em;
+	color: #fff;
+	padding: 1em;
+}
+
+.vw-gallery-feature {
+	border-bottom: 1px solid #fff;
+}
+
+.vw-gallery-feature > img {
+	display: none;
+}
+
+.vw-gallery-feature > .vw-feature-loading {
+	display: block;
+	visibility: hidden;
+}
+
+.vw-gallery-feature > .vw-feature-visible {
+	display: block;
+	visibility: visible;
+}
+
+.vw-gallery-feature-choice {
+	cursor: pointer;
+}
+
+.vw-gallery-caption {
+	padding: 1em;
+}
+
+.vw-gallery-scroller {
+	display: inline-block;
+	margin: 1em 0;
+	text-align: center;
+	width: 100%;
+}
+
+.vw-gallery-scrollable {
+	position: relative;
+}
+
+.vw-gallery-scrollable > .vw-gallery-scroll-contain {
+	overflow: hidden;
+	position: relative;
+}
+
+.vw-gallery-scroll-before, .vw-gallery-scroll-after {
+	background: #000 none   ;
+	display: block;
+	cursor: pointer;
+	padding: 1em 0.5em;
+	z-index: 5;
+}
+
+.vw-gallery-scroll-before {
+	cursor: pointer;
+	float: left;
+	margin-right: -2.5em;
+}
+
+.vw-gallery-scroll-before:before {
+	border-right: 1px dotted #fff;
+	content: "\f060";
+}
+
+.vw-gallery-scroll-after {
+	cursor: pointer;
+	float: right;
+	margin-left: -2.5em;
+}
+
+.vw-gallery-scroll-after:after {
+	border-left: 1px dotted #fff;
+	content: "\f061";
+}
+
+.vw-gallery-scroll-before:before, .vw-gallery-scroll-after:after {
+	background: #000 none   ;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: FontAwesome;
+	padding: 1em 0.5em;
+	text-decoration: none;
+	z-index: 5;
+}
+
+.vw-gallery-scroll-before:hover, .vw-gallery-scroll-after:hover {
+	text-decoration: none;
+}
+
+.vw-gallery-scroll-contain {
+	margin: 0 1em;
+}
+
+.vw-gallery-scrollable > .vw-gallery-scroll-contain {
+	margin: 0 2.5em;
+}
+
+.vw-gallery-scrollable .vw-gallery-scroll-body {
+	display: inline-block;
+	left: 0;
+	margin: 0;
+	position: relative;
+	right: 0;
+	z-index: 1;
+}
+
+.vw-gallery-scroll-body .vw-img-caption {
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.vw-gallery-scroller .vw-img-wrapper {
+	background: #000 none   ;
+	border-color: #000;
+	border-radius: 0.5em;
+	border-width: 4px;
+}
+
+.vw-gallery-selected > .vw-img-wrapper {
+	border-color: #fff;
+}
+
+.vw-gallery-scroll-jump {
+	bottom: 0;
+	left: 0;
+	padding-top: 1em;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+
+.vw-gallery-scroll-jump a {
+	border: 1px solid #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	display: inline-block;
+	height: 6px;
+	padding: 2px;
+	position: relative;
+	width: 6px;
+	z-index: 1;
+}
+
+.vw-gallery-scroll-jump a:hover {
+	background: #eee;
+}
+
+.vw-gallery-scroll-jumped, .vw-gallery-scroll-jumped:hover {
+	background: #fff;
+} 
+
+.vw-gallery-scroll-jump a + a {
+	margin-left: 10px;
+}
+
+/* ###### LINKS ###### */
+
+.vw-link, .vw-link:hover {
+	color: #417394;
+}
+
+.vw-link.new, .vw-link.new:hover {
+	color: #cc0000;
+}
+
+.vw-link-preview {
+	background: #fafafa none   ;
+	border: 1px solid #c0c0c0;
+	border-radius: 3px;
+	box-shadow: -3px 1px 1px #eaeaea;
+	display: block;
+	max-width: 300px;
+	min-width: 200px;
+	padding: 0.5em 1em;
+	position: absolute;
+	z-index: 1000;
+}
+
+.vw-link-preview-icon {
+	float: left;
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;
+}
+
+.vw-link-preview-content {
+	display: block;
+}
+
+.vw-link-preview-more {
+	border-top: 1px dotted #c0c0c0;
+	display: block;
+	font-weight: bold;
+	margin-top: 0.5em;
+	overflow: hidden;
+	padding-top: 0.3em;
+	text-align: right;
+}
+
+.vw-link-self {
+	font-weight: bold;
+}
+
+.vw-footnote, .vw-footnote-up {
+	font-size: 80%;
+	vertical-align: super;
+}
+
+.vw-footnote-up {
+	padding-right: 0.5em;
+}
+
+.vw-footnote-dupe {
+	font-style: italic;
+}
+
+.vw-widget {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.vw-widget-multi {
+	border-top: 1px dotted #c0c0c0;
+	border-bottom: 1px dotted #c0c0c0;
+}
+
+.vw-widget-multi-page {
+	margin: 0 0.5em;
+}
+
+
+.vw-widget .vw-block-content, .vw-content .vw-widget .vw-block-content {
+	padding: 0.5em 0.5em 1.5em !important;
+}
+
+.vw-widget-multi-page .vw-head {
+	font-size: 80%;
+}
+
+.vw-widget > .vw-block-content > .vw-list:last-child {
+	margin-bottom: 0;
+}
+
+.vw-widget .threadstats > li {
+	white-space: nowrap;
+}
+
+.vw-widget-multi-page > img:first-child {
+	padding-right: 0.5em;
+}
+
+.vw-widget-multi-page {
+	margin-top: 1em;
+}
+
+.vw-widget-multi-scroll {
+	margin: 0.5em 0 1em;
+	position: relative;
+	text-align: center;
+}
+
+.vw-widget-multi-scroll > * {
+	cursor: pointer;
+}
+
+.vw-widget-scroll-jump > * {
+	border: 2px solid transparent;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.vw-widget-scroll-jump > .vw-widget-scroll-jumped {
+	border-color: #444;
+}
+
+.vw-widget-scroll-jump > a {
+	margin: 0 0.25em;
+	padding: 0.25em;
+}
+
+.vw-widget-scroll-jump-empty {
+	border-color: #c0c0c0;
+	border-radius: 1em;
+}
+
+.vw-widget-scroll-jump-empty.vw-widget-scroll-jumped {
+	background: #444;
+}
+
+.vw-widget-scroll-jump > img {
+	max-height: 24px;
+	max-width: 24px !important;
+}
+
+.vw-widget-scroll-before, .vw-widget-scroll-after {
+	cursor: pointer;
+	padding: 1em 0.5em;
+	z-index: 5;
+}
+
+.vw-widget-scroll-before:before {
+	border-right: 1px dotted #444;
+	content: "\f060";
+}
+
+.vw-widget-scroll-after:after {
+	border-left: 1px dotted #444;
+	content: "\f061";
+}
+
+.vw-widget-scroll-before:before, .vw-widget-scroll-after:after {
+	display: inline-block;
+	font-family: FontAwesome;
+	padding: 1em 0.5em;
+	text-decoration: none;
+	z-index: 5;
+}
+
+.vw-widget-scroll-before:hover, .vw-widget-scroll-after:hover {
+	text-decoration: none;
+}
+
+.vw-widget-play-ctrl {
+	left: 0.5em;
+	position: absolute;
+	top: 0.5em;
+}
+
+.vw-widget-play-ctrl:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 24px;
+	height: 24px;
+	width: 24px;
+}
+
+.vw-widget-playing:before {
+	content: "\f04c";
+}
+
+.vw-widget-paused:before {
+	content: "\f04b";
+}
+
+.vw-block-sidebar > .vw-block-content > .vw-widget:first-child {
+	margin-top: 0;
+}
+
+.vw-block-sidebar > .vw-block-content > .vw-widget:last-child {
+	margin-bottom: 0;
+}
+
+.vw-block-sidebar > .vw-block-content > .vw-widget-multi:first-child {
+	border-top: none;
+}
+
+.vw-block-sidebar > .vw-block-content > .vw-widget-multi:last-child {
+	border-bottom: none;
+}
+
+.vw-block-sidebar.vw-widget {
+	margin-bottom: 0;
+}
+
+.vw-blocks-feed .vw-widget-multi-scroll {
+	margin-top: -3.5em;
+	font-size: 0.8em;
+}
+
+.vw-blocks-feed .vw-widget .vw-block-content {
+	padding-bottom: 0.5em !important;
+}
+
+.vw-sort-table .vw-sort-order {
+	display: none;
+}
+
+.vw-sort-table .vw-sort-order:after {
+	font-family: FontAwesome;
+	padding-left: 0.5em;
+}
+
+.vw-sort-table .vw-sort-asc:after {
+	content: '\f063';
+}
+
+.vw-sort-table .vw-sort-desc:after {
+	content: '\f062';
+}
+
+
+.restore, .vw-section, .vw-feed-entry .vw-content, .vw-block-bbcode .vw-block-content {
+	overflow: hidden;
+	position: relative;
+}
+
+/* ###### LIST ###### */
+
+.vw-list, .restore .vw-list {
+	margin: 0.5em 0 1.5em;
+}
+
+.vw-list .vw-list {
+	margin-bottom: 0;
+}
+
+ul.vw-list > li {
+	list-style-position: inside;
+	list-style-type: square;
+	list-style-image: url(//www.twingalaxies.com/vault/resources/images/bullet.gif);
+	margin: 0.5em;
+}
+
+ol.vw-list > li {
+	list-style-position: outside;
+	list-style-type: decimal;
+	margin: 0.5em 2.5em;
+}
+
+ol.vw-list.upper-roman > li {
+	list-style-type: upper-roman;
+}
+
+ol.vw-list.lower-roman > li {
+	list-style-type: lower-roman;
+}
+
+ol.vw-list.upper-alpha > li {
+	list-style-type: upper-alpha;
+}
+
+ol.vw-list.lower-alpha > li {
+	list-style-type: lower-alpha;
+}
+
+.vw-double-list, .vw-column-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.vw-double-list, .vw-column-list > li {
+	box-sizing: border-box;
+	flex-grow: 1;
+	padding-right: 1em;
+}
+
+.vw-double-list, .vw-column-list-2 > li {
+	min-width: 48%;
+	width: 48%;
+}
+
+.vw-column-list-3 > li {
+	min-width: 31%;
+	width: 31%;
+}
+
+.vw-stats-views {
+	margin-bottom: 0.5em;
+}
+
+.vw-list-contributors > li + li {
+	padding-top: 0.5em;
+}
+
+.vw-contrib-list, .vw-contrib-list > li {
+	display: inline;
+	position: relative;
+}
+
+.vw-list-item-prefix {
+	background: #eaeaea none   ;
+	border: 1px solid #dadada;
+	border-radius: 0.5em;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 0.1em 0.3em;
+}
+
+/* ###### HEADLINES ###### */
+
+.vw-head {
+	border-bottom: 1px solid #c0c0c0;
+	color: #444;
+	font-weight: bold;
+	margin-bottom: 0.1em;
+	overflow: hidden;
+	padding-bottom: 0.1em;
+	position: relative;
+	word-wrap: break-word;
+}
+
+.vw-div .vw-head, .vw-span .vw-head, table .vw-head {
+	border-bottom: none;
+}
+
+.vw-block .vw-soft-head {
+	border-bottom: none;
+}
+
+.vw-block > .vw-head:first-child, .vw-block > form > .vw-head:first-child {
+	background: #000000 none   ;
+	border: 1px solid #2E3539;
+	color: #ffffff;
+	font:   normal 14px ;
+	overflow: visible;
+	padding: 13px 12px 13px 12px;
+	margin: 0;
+}
+
+.vw-section + .vw-head, .vw-section .vw-section .vw-head {
+	margin-top: 0.5em;
+}
+
+.vw-head-links {
+	right: 0;
+	bottom: 0.2em;
+	position: absolute;
+}
+
+.vw-head-links a {
+	padding-right: 0.5em;
+	transition: opacity 0.3s ease 0s;
+	opacity: 0.3;
+}
+
+.vw-head-links:hover a {
+	opacity: 1;
+}
+
+.vw-head-links-mover {
+	clear: right;
+	float: right;
+	width: 1px;
+}
+
+.vw-head-links-mover + .vw-head-links {
+	bottom: 0;
+	clear: right;
+	float: right;
+	position: relative;
+}
+
+h1 .vw-head-text {
+	font-size: 2.4em;
+}
+
+h2 .vw-head-text {
+	font-size: 1.85em;
+}
+
+h3 .vw-head-text {
+	font-size: 1.7em;
+}
+
+h4 .vw-head-text {
+	font-size: 1.5em;
+}
+
+h5 .vw-head-text {
+	font-size: 1.3em;
+}
+
+h6 .vw-head-text {
+	font-size: 1em;
+}
+
+.vw-section {
+	padding: 0.2em;
+}
+
+* {
+    font-family: 'Rubik';
+}

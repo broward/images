@@ -1,0 +1,1244 @@
+<style type="text/css">
+/* Profile menu */
+a.deleteAccountLink {
+	text-decoration:none;
+}
+/*  Grid form layout  */
+
+#profile-form div.input-group, #profile-form div.input-group.institution-row .input-group,
+.registration form div.input-group, .registration form div.input-group.institution-row .input-group{
+	display:-ms-grid;
+	display:grid;
+	-ms-grid-columns:175px auto;
+	grid-template-columns:175px auto;
+	/*grid-template-rows:auto 40px;*/
+}
+#profile-form div.input-group>.label, .registration form div.input-group>.label{
+	display:-ms-grid;
+	display:grid;
+	max-width:175px;
+	-ms-grid-row:1;
+	grid-row-start:1;
+	-ms-grid-row-span:2;
+	grid-row-end:span 2;
+	-ms-grid-rows:auto auto;
+	grid-template-rows:auto auto;
+	-ms-grid-columns:175px auto;
+	grid-template-columns:175px auto;
+}
+#profile-form div.input-group>.label > *:nth-child(1), .registration form div.input-group>.label > *:nth-child(1){
+	-ms-grid-row:1;
+	-ms-grid-column:1;
+}
+#profile-form div.input-group>.label > *:nth-child(2), .registration form div.input-group>.label > *:nth-child(2){
+	-ms-grid-row:1;
+	-ms-grid-column:2;
+}
+#profile-form div.input-group>.label > *:nth-child(3), .registration form div.input-group>.label > *:nth-child(3){
+	-ms-grid-row:2;
+	-ms-grid-column:1;
+}
+#profile-form div.input-group>.label > *:nth-child(4), .registration form div.input-group>.label > *:nth-child(4){
+	-ms-grid-row:2;
+	-ms-grid-column:2;
+}
+#profile-form div.input-group label, .registration form div.input-group label {
+	-ms-grid-row:2;
+	grid-row-start:2;
+}
+#profile-form div.input-group .message.error, #profile-form div.input-group .actions.tfa-reset,
+.registration form div.input-group .message.error, .registration form div.input-group .actions.tfa-reset {
+	-ms-grid-column:1;
+	grid-column-start:1;
+	-ms-grid-column-span:1;
+	grid-column-end:2;
+	-ms-grid-row:1;
+	grid-row-start:1;
+	width:680px;
+	max-width:85vw
+}
+#profile-form div.input-group input, #profile-form div.input-group select,
+.registration form div.input-group input, .registration form div.input-group select{
+	-ms-grid-row:2;
+	grid-row-start:2;
+	-ms-grid-column:2;
+	grid-column-start:2;
+}
+.sageCountryInstitution .message.error:nth-of-type(2) {
+	display:none
+}
+/*  Grid form layout  */
+/*.label .message.error{
+	text-transform:capitalize
+}*/
+#profile-form .actions.tfa-reset {
+	display:none
+}
+#profileMenu {
+	background-color:#eeeeee;
+	padding:1px 10px 10px 10px;
+	border-radius:5px;
+	margin-bottom:32px;
+}
+#profileMenu > div {
+	background-color:white;
+	border-radius:5px;
+}
+#profileMenu .accordionHeader {
+	padding-left:5px;
+	background-color:transparent;
+	color:#555;
+}
+#profileMenu .accordionPanel {
+	padding:5px 10px;
+	border-bottom:none;
+}
+#profileMenu .accordionPanel a {
+	font-size:16px;
+	color:#555555;
+}
+#profileMenu .accordionPanel a:hover, #profileMenu .accordionPanel a:focus, #profileMenu .accordionPanel a:active {
+	text-decoration:underline;
+}
+#profileMenu h4 {
+	margin:0;
+	line-height:35px;
+}
+#profileMenu .active {
+	background-color:#796c83;
+}
+#profileMenu .active a {
+	color:white;
+}
+/* --- Profile forms --- */
+.literatumProfileMainWidget {
+	margin-top:-3px;
+	font-size:16px;
+	color:#333333;
+	line-height:26px;
+	font-weight:normal;
+}
+.profileMain form input:focus, .profileMain form input:hover, .profileMain form input:active,
+.profileMain button:focus, .profileMain button:hover, .profileMain button:active {
+	text-decoration:underline !important;
+	cursor:pointer;
+}
+input[type="email"]:invalid{
+	background-color:transparent !important;
+	color:#333 !important
+}
+.profileMain form input[type="text"]:focus, .profileMain form input[type="text"]:hover, .profileMain form input[type="text"]:active,
+.profileMain form input[type="tel"]:focus, .profileMain form input[type="tel"]:hover, .profileMain form input[type="tel"]:active,
+.profileMain form input[type="password"]:focus, .profileMain form input[type="password"]:hover, .profileMain form input[type="password"]:active,
+.profileMain form input[type="email"]:focus, .profileMain form input[type="email"]:hover, .profileMain form input[type="email"]:active {
+	text-decoration:none !important;
+	cursor:text;
+}
+.profileMain .email, .profileMain .phones-wrappers>.phone:nth-of-type(n+3) {
+	display:none
+}
+.profileMain .email.primary{
+	margin-bottom:40px;
+	display:block
+}
+.registration form{
+	line-height:48px
+}
+form label {
+	text-align:left;
+	display:block;
+	min-width:175px
+}
+.usageReportsWidget form label{
+	display:inline;
+	min-width:auto;
+}
+form label.tgl-btn {
+	min-width:auto
+}
+#user-login-form .login-form div.keepMeLogin, .profileMain .phone{
+	display:inline-flex;
+}
+.login-form div.keepMeLogin .tgl-btn{
+	display:none
+}
+.literatumManageAlertsWidget form label, .literatumHoldingsWidget form label{
+	display:inline
+}
+form input[type="password"], form input[type="text"], form input[type="email"], .form input[type="tel"],
+.literatumProfileMainWidget input[type="password"],.literatumProfileMainWidget input[type="text"],.literatumProfileMainWidget input[type="email"]{
+	background:transparent;
+	width:379px;
+	padding:5px 10px;
+	font-size:16px;
+	color:#333333;
+	border:1px solid #d4d4d4;
+	border-radius:5px;
+	height:26px;
+	-webkit-appearance:none;
+}
+#profile-form input[type="reset"]:hover, .literatumProfileMainWidget input[type="reset"]:hover{
+	background-color:#cccccc;
+}
+#accessTokenForm label {
+	padding-right:10px;
+	min-width:auto
+}
+form.request-reset-password-form label{
+	min-width:110px
+}
+form.request-reset-password-form .label, .registration .captchaWidget .label, #profile-form .captchaWidget .label{
+	display:flex;
+	flex-wrap:wrap-reverse;
+}
+.registration .captchaWidget .captchaCode-raa-error, .registration .captchaWidget label[for="captchaCode"]{
+	width:100%;
+	text-align:center
+}
+form.request-reset-password-form label[for="captchaCode"], #profile-form label[for="captchaCode"]{
+	width:100%
+}
+.email .actions{
+	-ms-grid-row:3;
+	grid-row-start:3
+}
+#profile-passwrod-popup .top-drawer {
+	background-color:rgba(0,0,0,.7);;
+	width:100vw;
+	height:100vh;
+	top:0;
+	left:0;
+	position:fixed;
+	z-index:100
+}
+#profile-passwrod-popup .top-drawer .content {
+	position:sticky;
+	border:1px solid #ccc;
+	z-index:10;
+	background-color:#fff;
+	padding:10px 30px 30px;
+	margin:18vh auto;
+	width:530px;
+	max-width:80vw
+}
+#profile-passwrod-popup input{
+	max-width:55%
+}
+#profile-passwrod-popup .cancel {
+	position:absolute;
+	bottom:25px;
+	right:30px
+}
+#profile-passwrod-popup .cancel::before {
+	content:"";
+	display:block;
+	position:fixed;
+	top:18vh;
+	color:#555;
+	right:calc(50% - 290px);
+	font-size:24px;
+	font-weight:800;
+}
+.literatumIpRangesWidget input.smalltextfield {
+	width:200px
+}
+#profile-passwrod-popup div.form{
+	display:grid
+}
+#profile-passwrod-popup .button.primary.submit {
+	margin:10px auto 0;
+	padding:10px 40px
+}
+#profile-passwrod-popup .button.primary.submit:disabled, #profile-passwrod-popup .button.primary.submit[aria-disabled="true"] {
+	padding:9px 42px !important
+}
+#profile-passwrod-popup .success-template p{
+	margin-bottom:0
+}
+/*.profileInfoTable tr:nth-last-child(5) {
+	display:none;
+}*/
+table.profileInfoTable td:empty {
+	padding:0;
+}
+.profileInfoTable select {
+	width:401px;
+	padding:5px 10px;
+	font-size:16px;
+	color:#333333;
+	border:1px solid #d4d4d4;
+	border-radius:5px;
+	height:38px;
+	background:white;
+}
+.registration form .pswd_info_registration, .profileMain form .pswd_info_registration {
+	margin-left:230px
+}
+.registration .login-info .inputShowPwd.confirmPassword .input-group{
+	position:absolute;
+	margin-top:-50px
+}
+.registration .login-info.pwd-error .inputShowPwd.confirmPassword .input-group{
+	position:relative;
+	margin-top:inherit
+}
+.login-info #new-password-rules{
+	margin-top:15px
+}
+.login-info.pwd-error #new-password-rules{
+	margin-top:inherit
+}
+.literatumProfileMainWidget input[type="submit"]{
+	color:white;
+	background-color:#AC2226;
+	padding:10px 20px;
+	font-weight:bold;
+	border-radius:5px;
+	font-size:16px;
+	text-decoration:none;
+	border:0;
+	margin-top:10px;
+}
+.registration form input[type="submit"] {
+	width:262px;
+	height:45px;
+}
+#profile-form input[type="reset"], .literatumProfileMainWidget input[type="reset"] {
+	padding:9px 20px;
+	font-weight:bold;
+	border-radius:5px;
+	font-size:16px;
+	opacity:1;
+	box-shadow:none;
+	color:#888888;
+	background-color:#eeeeee;
+	border:1px solid #cccccc;
+	width:100px;
+	margin-top:10px;
+}
+.actionButton {
+	background-color:#AC2226;
+	border-radius:4px;
+	border:0;
+	color:white;
+	padding:10px 20px
+}
+.usageReportSubmitReport input,
+.usageReportSaveButton {
+	margin:15px 0 30px 0;
+}
+.literatumIpRangesWidget input[type="submit"] {
+	margin:0 0 15px 0;
+}
+.tabs-widget .tab-nav {
+	border:0;
+	padding:0;
+}
+.tabs-widget .tab-nav li,
+.tabs-widget .tab-nav li.active,
+.licensesTabs li,
+.licensesTabs li.active {
+	background:transparent;
+	background-color:transparent;
+	padding:0;
+}
+.tabs-widget .tab-nav li a,
+.licensesTabs li a {
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	background:#EEEEEE;
+	border:1px solid #CCCCCC;
+	color:#555555;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	border-bottom:none;
+	width:150px;
+}
+.tabs-widget .tab-nav li.active a,
+.licensesTabs li.active a {
+	background:#796c83;
+	color:#ffffff;
+}
+.literatumFavoritesWidget .tabs-widget .tab-content,
+.literatumManageAlertsWidget .tabs-widget .tab-content,
+.instSubscription #subscriptionPanel {
+	background:transparent;
+	padding:0;
+	float:left;
+	border:1px solid #CCCCCC;
+	background-color:transparent;
+	width:100%;
+}
+.instSubscription #subscriptionPanel .gutter .controlsPanel {
+	background-color:transparent;
+}
+.licensesTable thead {
+	display:none;
+}
+.instSubscription #subscriptionPanel .gutter .licensesTable td {
+	font-size:16px;
+}
+div#sortControl {
+	display:none;
+}
+#subscriptionPanel .gutter > div {
+	padding:20px;
+}
+.favoritesPublicationTable td.checkbox {
+	vertical-align:baseline;
+}
+/* --- Profile Page --- */
+.liteartumUserProfileWidget h3#areas-of-interest-label,
+.liteartumUserProfileWidget td.doubleWidth {
+	font-size:22px;
+	padding:10px 0;
+	color:gray;
+}
+.holdings input[type="radio"] {
+	width:auto;
+	display:inline
+} 
+/* --- Link Resolver --- */
+.linkResolverWidget img {
+	margin-left:10px;
+	margin-top:-10px;
+}
+input[type="file"] {
+	margin-left:10px;
+}
+.linkResolverWidget label.custom-file-upload:before {
+	content:"Choose File";
+	opacity:1;
+	box-shadow:none;
+	background-color:#eeeeee;
+	border:1px solid #cccccc;
+	padding:4px 20px;
+	border-radius:6px;
+	color:#555555;
+	font-size:14px;
+	margin-left:10px;
+	cursor:pointer;
+	display:inline-block;
+}
+.linkResolverWidget input[type="file"] {
+	display:none;
+}
+/* ---- alerts ---- */
+.contentAlerts tbody tr:first-child,
+h3.alertSettingsHeaderText {
+	display:none;
+}
+.success {
+	padding:0 10px;
+}
+.tabs .tab-content .tab-pane.active {
+	padding:10px;
+}
+.controlsPanel.firstAlertSettingTocContPanel {
+	border-bottom:1px solid #ccc;
+}
+.controlsPanel.secondAlertSettingTocContPanel {
+	border-top:1px solid #ccc;
+}
+.firstAlertSettingTocContPanel button#removeJournal {
+	display:none;
+}
+.secondAlertSettingTocContPanel span.script_only {
+	display:none;
+}
+.manageFavorites .journalsList,
+.manageAlertsWidget .articlesList,
+.manageFavorites .articlesList {
+	padding:5px 25px;
+}
+.manageAlertsWidget .journalsList {
+	padding:5px 3px;
+}
+.manageAlertsWidget .articleTable td, .manageFavorites .articleTable td {
+	padding:0;
+}
+.manageAlertsWidget table.articleTable {
+	margin-bottom:15px;
+}
+.controlsPanel .script_only span {
+	position:relative;
+	top:2px;
+}
+.manageAlertsWidget .alertSubmitButton input[type="reset"] {
+	display:none;
+}
+.manageAlertsWidget button#removeJournal {
+	color:white;
+	background-color:#796c83;
+	padding:10px 20px;
+	font-weight:bold;
+	border-radius:5px;
+	font-size:16px;
+	text-decoration:none;
+	border:0;
+	margin-top:5px;
+	margin-left:-5px;
+	width:100px;
+}
+.manageAlertsWidget button#removeJournal:hover {
+	background-color:#5F4D6D;
+}
+.manageAlertsWidget .alertSettingsMailFormat h3 {
+	margin-top:40px;
+	margin-bottom:10px;
+}
+.manageAlertsWidget .controlsPanel {
+	height:45px;
+}
+.manageAlertsWidget .controlsPanel .script_only span {
+	line-height:50px;
+}
+.manageAlertsWidget select.axafrequency {
+	width:115px;
+	padding:5px 10px;
+	font-size:16px;
+	color:#333333;
+	border:1px solid #d4d4d4;
+	border-radius:5px;
+	height:38px;
+	background:white;
+	margin:5px 0;
+}
+/* ---- favorites ---- */
+.manageFavorites .controlsPanel {
+	height:25px;
+	padding:5px 5px 10px 5px;
+	margin-left:-25px;
+	border-bottom:1px solid #ccc;
+}
+.articleTable tr:first-child {
+	display:none;
+}
+.articleTable td {
+	vertical-align:top;
+}
+.right .selectMenuLabel,
+.selectMenuLabel span {
+	position:relative;
+	top:2px;
+}
+.manageFavorites .tab-nav {
+	display:none;
+}
+.literatumFavoritesWidget .tabs-widget .tab-content {
+	border:none;
+}
+div#favoritePublications {
+	padding:0;
+}
+.journalsList .controlsPanel {
+	font-weight:bold;
+}
+.journalsList .actionButton {
+	font-weight:bold;
+	font-size:16px;
+	margin-top:20px;
+}
+select.favoritePublicationsOptions {
+	border:1px solid #cccccc;
+	margin-left:10px;
+	font-size:14px;
+}
+.literatumFavoritesWidget {
+	margin-top:-25px;
+}
+/* ---- saved sesarch ---- */
+tbody tr:nth-child(2) td.savedSearch.savedResult {
+	border-top:1px solid #ccc;
+}
+.literatumSavedSearchesProfileWidget table {
+	border-collapse:collapse;
+    overflow-x:auto;
+    display:block;
+}
+.literatumSavedSearchesProfileWidget table tr {
+	height:40px;
+}
+td.savedSearch.savedResult {
+	vertical-align:middle;
+}
+.literatumSavedSearchesProfileWidget hr {
+	display:none;
+}
+.literatumSavedSearchesProfileWidget a#SSDelete {
+	color:white;
+	background-color:#AC2226;
+	padding:10px 20px;
+	font-weight:bold;
+	border-radius:5px;
+	font-size:16px;
+	text-decoration:none;
+	border:0;
+}
+.literatumSavedSearchesProfileWidget a#SSDelete:hover, .literatumSavedSearchesProfileWidget a#SSDelete:focus, .literatumSavedSearchesProfileWidget a#SSDelete:active {
+	background-color:#990000;
+	text-decoration:underline;
+}
+/* INSTITUTON ADMIN */
+.managedInstitutions label {
+	display:none;
+}
+.managedInstitutions {
+	text-align:right;
+	float:right;
+	margin-top:8px;
+}
+.managedInstitutions select {
+	border:1px solid #cccccc;
+	margin-left:10px;
+	font-size:14px;
+}
+.managedInstitutions label {
+	font-weight:bold;
+}
+.administratorsWidget, .tpsWidget, .ipRangesWidget, .usageReportsWidget, .authoredServices {
+	border:0;
+}
+ul.SUSHIList {
+	padding:0;
+}
+.usageReportsWidget {
+	padding:0;
+}
+.usageReportsWidget br {
+	display:none;
+}
+.usageReportsWidget ul {
+	padding:0;
+}
+.usageReportsWidget ul li {
+	padding-left:22px;
+	text-indent:-24px;
+    word-wrap:break-word;
+}
+.usageReportsWidget li.middle {
+	padding-top:25px;
+}
+.usageReportList > li:first-child > .bold {
+	display:none;
+}
+form label[for="counterEnabled"]{
+	display: inline;
+}
+.m-deflist__action button{
+	color: white;
+	background-color: #796c83;
+	padding: 8px 20px;
+	border-radius: 5px;
+	font-size: 14px;
+	text-decoration: none;
+	border: 0;
+	margin-top: 10px;
+	line-height: 18px;
+}
+.m-deflist__action button:hover, .m-deflist__action button:active, .m-deflist__action button:focus{
+	background-color: #5F4D6D;
+}
+.customersReports:before {
+	content:"Usage data from January 2015 to mid-December 2016. Newer usage is available via the \"Current COUNTER Reports\" section below. To obtain full December 2016 usage statistics, please combine usage from both sources.";
+}
+ul.usageDataYearOptions:before {
+	content:"Select time period:";
+	font-weight:bold;
+}
+label[for="yearOnly"],
+.usageReportYearOnly label {
+	font-weight:normal;
+}
+.literatumUsageReportsWidget h2.extraPageTitle {
+	margin-top:0;
+}
+p.success {
+	color:#AC2226
+}
+/* ---- ip ranges ---- */
+.literatumIpRangesWidget h2:first-child {
+	display:none;
+}
+.ipRangesWidget .container .right {
+	float:none;
+	padding:0;
+	color:#999;
+}
+.ipRangesWidget {
+	padding:0;
+}
+.ipRangesWidget table.header {
+	width:auto;
+	margin-left:-3px;
+	margin-bottom:10px;
+}
+.literatumShibbolethWidget h5 {
+	font-size:16px;
+	color:#555555;
+	font-weight:normal;
+	margin:20px 0 10px 0;
+}
+.literatumShibbolethWidget br {
+	display:none;
+}
+.literatumShibbolethWidget input[type="submit"] {
+	margin-top:20px;
+}
+.ipRangesWidget table {
+	border-collapse:collapse;
+}
+.ipRangesWidget td {
+	padding:5px 10px;
+}
+.ipRangesWidget tr:first-child td {
+	font-weight:bold;
+	border-bottom:1px solid #cccccc;
+}
+/* ---- administrators ---- */
+.administratorsWidget .container .right {
+	float:left;
+	padding:0 0 15px 0;
+	color:#555;
+	max-width:none;
+}
+/* ---- co-branding ---- */
+#institutionUrlAdmin + .sectionTitle {
+    margin-top:62px;
+}
+.literatumCoBrandingWidget hr {
+	display:none;
+}
+.boxedWidget.coBranding > form > br:nth-child(16) {
+	display:none;
+}
+div#institutionUrlAdmin {
+	margin-top:40px;
+}
+input#updateInstitutionUrl {
+	display:block;
+	margin:25px 0;
+}
+.coBranding input[type="submit"] {
+	width:110px;
+}
+#accessLogo {
+	margin-left:10px;
+}
+#instLogoImage img {
+	margin:7px 0 0 7px;
+}
+input#fakeBrowse {
+	opacity:1;
+	box-shadow:none;
+	background-color:#eeeeee;
+	border:1px solid #cccccc;
+	padding:4px 20px;
+	border-radius:6px;
+	color:#555555;
+	font-size:14px;
+	cursor:pointer;
+	display:inline-block;
+}
+/* Mail page */
+#emailColleague {
+    font-size:14px;
+}
+.mailPage {
+	font-size:16px;
+}
+.fogottenPasswordContainer .defButton, .requestResetPassword .defButton, .mailPage .defButton {
+	color:white;
+	background-color:#AC2226;
+	padding:10px 20px;
+	font-weight:bold;
+	border-radius:5px;
+	font-size:16px;
+	text-decoration:none;
+	border:0;
+	margin-top:10px;
+}
+.mailPage .defButton:hover, .mailPage .defButton:focus, .mailPage .defButton:active,
+.fogottenPasswordContainer .defButton:hover, .fogottenPasswordContainer .defButton:focus, .fogottenPasswordContainer .defButton:active,
+.requestResetPassword .defButton:hover, .requestResetPassword .defButton:focus, .requestResetPassword .defButton:active{
+	background-color:#990000;
+	text-decoration:underline!important;
+    cursor:pointer;
+}
+#profile-form .inline-actions, #accessTokenForm>p.message {
+	display:none;
+}
+#profile-form .delete-account-container {
+	float:right
+}
+#profile-form .save-profile{
+	position:absolute;
+	left:0
+}
+#profile-form .tfa-form-container #selectOneOfTheOptions{
+	top:7px;
+	left:175px;
+	padding:2px 0px 6px 5px;
+	height:28px
+}
+#profile-form .tfa-form-container.phone-error #selectOneOfTheOptions{
+	top:33px
+}
+#profile-form .tfa-form-container ul#js__countries-select{
+	left:185px;
+	margin:-3px 0 0 -10px
+}
+#profile-form input[type="tel"]{
+	padding-left:120px;
+	width:269px
+}
+/*
+.input-group .message.error{
+	width:50%;
+	display:inline-block;
+	padding:15px 30px
+}
+.input-group .message.error>span{
+	position:absolute
+}*/
+/* ========= REGISTRATION PAGE =========== */
+.registration form div.input-group.hide {
+	display:none
+}
+.registration form .sageSubjectOfAreasControls ,
+.registration form #special-offers .pb-rich-text{
+	padding-left:35px;
+}
+.registration form li,.error, .error a{
+	line-height:26px
+}
+.registration form .wrapped>h2 {
+	font-size:18px;
+	padding:10px 0;
+	margin:0;
+	color:#555;
+}
+.registration form .wrapped>h2:before {
+	border:1px solid #5F4D6D;
+	border-radius:36px;
+	background:#5F4D6D;
+	color:white;
+	padding:6px 10px;
+	font-size:14px;
+	line-height:22px;
+	vertical-align:text-bottom;
+	margin-right:10px
+}
+.registration form .loginInformation h2:before {
+	content:"1"
+}
+.registration form .personalInformation h2:before {
+	content:"2"
+}
+.registration form #special-offers h2:before {
+	content:"3"
+}
+.registration form #special-offers h2{
+	margin-left:-35px
+}
+form .sageSubjectOfAreas label.markText{
+	margin-left:0
+}
+.no-bottom-margin h2 {
+	margin-bottom:0;
+}
+.registration form .actions {
+	text-align:center;
+	text-align:-webkit-center;
+	text-align:-moz-center
+}
+.registration form .actions a.cancel, #profile-form .deleteAccount__tooltip{
+	display:none
+}
+/* quick fix for recaptcha in mobile views */
+.captchaWidget .widget-body label {
+	text-align:center
+}
+#profile-form .captchaWidget .widget-body label {
+	text-align:left
+}
+.recaptchatable {
+	line-height:0 !important;
+}
+#recaptcha_area {
+	margin:auto;
+}
+.recaptcha td {
+	display:table-cell !important;
+}
+.g-recaptcha {
+	margin:10px auto;
+	text-align:left;
+}
+.g-recaptcha > div {
+	width:auto !important;
+}
+.captchaWidget  {
+	font-size:16px !important;
+}
+#sampleCaptcha, .deleteAccountAction {
+	display:inline-block !important
+}
+.deleteAccountAction {
+	margin-right:140px
+}
+.registration form .captchaWidget{
+	text-align:center;
+	text-align:-webkit-center;
+	text-align:-moz-center;
+} 
+.registration form label {
+	margin-left:30px;
+	display:block;
+	min-width:180px
+}
+.registration form h3{
+	margin:0
+}
+.align-heading {
+	margin-top:-23px;
+}
+span.required {
+	text-transform:capitalize;
+}
+.registration form select, .registration form input {
+	margin:5px 25px 5px 0;
+}
+form select#usertitles\.title,form select#sageCountryInstitution\.countryCode,form .titleDropdown,form select#institution,
+form select#sageprofession\.profession1,form select#sageprofession\.profession2 {
+	width:401px;
+	font-size:16px;
+	color:#333333;
+	border:1px solid #d4d4d4;
+	border-radius:5px;
+	height:38px;
+	padding-left:5px;
+	background-color:white
+}
+.registration form .termsAndConditions {
+	margin-top:30px
+}
+.registration form .termsAndConditions h3{
+	line-height:20px
+}
+.showEuCountriesOffer label, .showOtherCountriesOffer label{
+	margin-left:0;
+	position:relative
+}
+.registration form .termsAndConditions .switch{
+	position:absolute;
+	width:40px;
+	margin-left:35px;
+	margin-top:-12px;
+	float:left
+}
+.registration form .termsAndConditions .textZone.normal-txt{
+	float:right;
+	margin-right:calc(100% - 570px);
+	margin-top:-4px
+}
+.registration form .marketablerow.rtl label {
+	margin-left:0;
+}
+.registration form .marketablerow.rtl label .privacyPolicyDropZone{
+	margin-left:20px;
+}
+.terms-of-use{
+	margin-left:60px
+}
+#areas-of-interest-label,.registration form p.required.rtl,.registration form .terms-message>p:first-of-type {
+	display:none
+}
+.registration-sidebar {
+	background-color:#f7f7f7;
+	padding:1px 13px 20px 13px;
+	border-radius:5px;
+	font-size:16px;
+	border:2px solid #655870;
+}
+.registration-sidebar ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.registration-sidebar li {
+	padding-left:1em;
+	text-indent:-.7em;
+}
+.registration-sidebar li:before {
+	content:"• ";
+	color:#AC2226;
+	font-size:20px;
+	line-height:14px;
+	vertical-align:middle;
+	padding-right:5px;
+}
+.registration-sidebar h2 {
+	margin-bottom:0;
+}
+.sageSubjectOfAreas {
+	line-height:26px
+}
+.sageSubjectOfAreas ul {
+	list-style-type:none;
+}
+.sageSubjectOfAreas input {
+	float:left;
+	margin-right:10px
+}
+.sageSubjectOfAreas input#marktable{
+	float:none
+}
+tr.error td.doubleWidth {
+    color:#AC2226;
+	font-size:16px;
+	padding-bottom:0
+}
+/* --- token activation --- */
+.accessToken .note {
+	display:none
+}
+/* --- Society Activation page --- */
+.literatumSocietyAccessWidget label {
+	display:block
+}
+.literatumSocietyAccessWidget select {
+	width:401px;
+	font-size:16px;
+	color:#333333;
+	border:1px solid #d4d4d4;
+	border-radius:5px;
+	height:38px;
+	background-color:white;
+	margin-bottom:21px
+}
+.literatumSocietyAccessWidget .submitBtn {
+	display:block;
+	margin-top:25px;
+	width:auto!important
+}
+/* --- INSTITUTION ACTIVATION --- */
+.activateInst p,
+.activateInst h2,
+.activationAgree label {
+	display:none
+}
+.activationAgree:before {
+	content:"Accept Terms and Conditions (yes or no):";
+	display:block
+}
+label[for="activationCode"] {
+	display:block
+}
+.activationAgree {
+	margin-bottom:20px
+}
+.activateInst input {
+	margin-right:10px
+}
+.activateInst input.formbutton {
+	width:auto!important;
+	display:block;
+	margin-top:20px
+}
+.activateInst .error {
+	display:block
+}
+#profile-passwrod-popup .success-template p[role="status"], .error p {
+	color:#AC2226
+}
+.tfa-form-container.phoneCode {
+	margin:0;
+	padding:0;
+	position:relative
+}
+.coBranding input[name="removeImage"] {
+    background-color:#796c83
+}
+.coBranding input[name="removeImage"]:hover {
+    background-color:#5F4D6D
+}
+.marketableRadioOptions {
+	display:block
+}
+/*IE11*/
+@media(-ms-high-contrast:active),(-ms-high-contrast:none){
+	#profile-form div.input-group, .registration form div.input-group{
+		margin-bottom:20px
+	}
+	#profile-form div.input-group>.input-group, .registration form div.input-group>.input-group {
+		margin-bottom:0
+	}
+	#profile-form div.input-group .message.error, #profile-form div.input-group .actions.tfa-reset, .registration form div.input-group .message.error, .registration form div.input-group .actions.tfa-reset{
+		margin-top:-20px;
+		display:block
+	}
+	.registration form select, .profileMain form select{
+		background:url('/templates/jsp/pb2/img/icon_arrow_dropdown.png') no-repeat 97%;
+	}
+	#user-login-form .login-form div.keepMeLogin{
+		display:block
+	}
+	#profile-passwrod-popup .cancel{
+		position:relative;
+		margin-top:-30px
+	}
+}
+@media (max-width:1023px) {
+	.registration form .regForm td {
+		display:block
+	}
+	.registration-sidebar {
+		display:none
+	}
+	.registration form label {
+		margin-left:0
+	}
+	form select#usertitles\.title,form select#sageCountryInstitution\.countryCode,form .titleDropdown,form select#institution,
+	form select#sageprofession\.profession1,form select#sageprofession\.profession2 {
+		width:403px
+	}
+	.registration form input[type="password"],.registration form input[type="text"],.registration form input[type="email"],
+	#profile-form input[type="password"],#profile-form input[type="text"],#profile-form input[type="email"] {
+		width:380px
+	}
+	.registration form input[type="tel"], #profile-form input[type="tel"] {
+		width:270px
+	}
+	.registration form .sageSubjectOfAreas td, .registration form .marketablerow td {
+		padding-left:0
+	}
+}
+@media (max-width:768px) {
+	.sageSubjectOfAreas ul {
+		padding-left:15px
+	}
+}
+@media (max-width:652px) {
+	#profile-form div.input-group input, #profile-form div.input-group select,
+	.registration form div.input-group input, .registration form div.input-group select{
+		-ms-grid-row:3;
+		grid-row-start:3;
+		-ms-grid-column:1;
+		grid-column-start:1
+	}
+	.email .actions {
+		-ms-grid-row:4;
+		grid-row-start:4;
+	}
+	form select#usertitles\.title,form select#sageCountryInstitution\.countryCode,form .titleDropdown,form select#institution,
+	form select#sageprofession\.profession1,form select#sageprofession\.profession2 {
+		width:calc(100vw - 150px)
+	}
+	.registration form input[type="password"],.registration form input[type="text"],.registration form input[type="email"],
+	#profile-form input[type="password"],#profile-form input[type="text"],#profile-form input[type="email"] {
+		width:calc(100vw - 173px)
+	}
+	.registration form input[type="tel"], #profile-form input[type="tel"] {
+		width:calc(100vw - 283px)
+	}
+	#profile-passwrod-popup input {
+		max-width:40%
+	}
+	#profile-form .tfa-form-container #selectOneOfTheOptions{
+		top:45px;
+		left:0
+	}
+	.registration form .termsAndConditions .textZone.normal-txt{
+		margin-right:0;
+		margin-left:55px
+	}
+}
+@media (max-width:580px) {
+	.deleteAccountAction {
+		margin-right:20px
+	}
+	.literatumSavedSearchesProfileWidget table {
+		font-size:14px
+	}
+	.profileInfoTable tbody, .profileInfoTable tr, .profileInfoTable th, .profileInfoTable td,
+	.literatumSocietyAccessWidget tbody, .literatumSocietyAccessWidget tr, .literatumSocietyAccessWidget th, .literatumSocietyAccessWidget td,
+	.literatumActivateTokenWidget tbody, .literatumActivateTokenWidget tr, .literatumActivateTokenWidget th, .literatumActivateTokenWidget td,
+	.registration form tbody, .registration form th, .registration form td {
+		display:block;
+		padding:0;
+		text-align:left;
+		max-width:93%
+	}
+	.profileInfoTable select,.literatumSocietyAccessWidget select,.literatumActivateTokenWidget select {
+		width:80vw !important
+	}
+	.tfa-form-container.phoneCode {
+		width:90vw
+	}
+	.literatumProfileMainWidget input[type="password"],
+	.literatumProfileMainWidget input[type="text"],
+	.literatumProfileMainWidget input[type="email"] {
+		width:75vw
+	}
+}
+@media (max-width:540px) {
+	form .captchaWidget {
+		margin-left:-5px
+	}
+	.ipRangesWidget table {
+		overflow-x:auto;
+		display:block
+	}
+	#subscriptionPanel .gutter > div {
+		padding:5px
+	}
+	.licensesTable div {
+		max-width:62vw
+	}
+	.licensesTable div a{
+		word-wrap:break-word;
+	}
+	form div.input-group, form div.input-group.institution-row .input-group{
+		display:inline-block
+	}
+	.email .actions{
+		margin:0
+	}
+	form select#usertitles\.title,form select#sageCountryInstitution\.countryCode,form .titleDropdown,form select#institution,
+	form select#sageprofession\.profession1,form select#sageprofession\.profession2 {
+		width:calc(90vw - 57px);
+	}
+	.registration form input[type="password"],.registration form input[type="text"],.registration form input[type="email"],
+	#profile-form input[type="password"],#profile-form input[type="text"],#profile-form input[type="email"] {
+		width:calc(90vw - 80px)
+	}
+	.registration form input[type="tel"], #profile-form input[type="tel"] {
+		width:calc(90vw - 190px)
+	}
+	#profile-passwrod-popup input {
+		max-width:65%
+	}
+	#profile-passwrod-popup .top-drawer .content{
+		width:300px
+	}
+}
+@media (max-width:400px) {
+	.instSubscription #subscriptionPanel, .licensesTabs {
+		width:97%;
+		display:flex
+	}
+	.licensesTabs li a {
+		width:130px;
+		font-size:15px
+	}
+}
+@media (min-width:1024px) {
+	.literatumProfileMenuWidget .accordionHeader + div {
+		display:block !important
+	}
+}
+</style>

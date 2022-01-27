@@ -1,0 +1,383 @@
+body { font-size:90%; font-family:verdana,arial,sans-serif; background-color:#EEEEE4; margin:0; padding:0; }
+td { vertical-align:top; }
+img { border:0; }
+a { color:#083717; }
+a:hover, a:focus { text-decoration:none; }
+sup { font-size:70%; }
+
+#pgHeader { background:#004712 url("/images/header_background.gif") no-repeat; border:1px solid #CCCCCC; border-width:0 1px; height:72px; margin:0 auto; width:970px; }
+#pgHeader #orgLogo { float:left; }
+#pgHeader #orgLogo img { height:42px; width:392px; }
+#pgHeader #mainSearch { color:#FFFFFF; float:right; font-size:80%; height:30px; margin:0 auto; padding:2px 0; text-align:right; text-shadow:2px 2px 2px #333333; }
+#pgHeader #mainSearch form { margin:0; padding:4px 11px 0; }
+#pgHeader #mainSearch .searchBox { float:right; padding-right:22px; }
+#pgHeader #mainSearch .followUs { float:right; }
+#pgHeader #mainSearch .followUs img { height:21px; width:83px; }
+#pgHeader #mainSearch .followUs span { left:-9999em; position:absolute; } /* used to hide content meant for screen readers and for those with CSS turned off */
+#pgHeader #mainSearch a { color:#FFFFFF; text-decoration:none; text-shadow:2px 2px 2px #333333; }
+#pgHeader #mainSearch a:hover { text-decoration:underline; }
+#pgHeader #mainSearch .textInput { border-radius:10px 0 0 10px; height:15px; margin:0; padding:0; }
+#pgHeader #mainSearch .button { border:0; height:21px; margin:0; padding:0; vertical-align:bottom; width:23px; }
+
+#mainNav { text-align:center; }
+#mainNav div { width:970px; margin:0 auto; background:#FFFFFF url("/images/mn_background.gif") no-repeat top center; border:1px solid #CCCCCC; border-width:0 1px; text-align:right; }
+#mainNav ul { list-style:none; margin:0; padding:0; padding-right:31px; text-align:right; }
+#mainNav li { display:inline; position:relative; }
+#mainNav li.last { padding-right:34px; }
+#mainNav img { background:none; width:107px; height:53px; border:0; }
+#mainNav ul ul { position:absolute; top:-999em; left:0; margin:0; padding:2px; width:178px; background-color:#EEEEE4; border:1px solid #666; text-align:left; }
+#mainNav ul ul li { margin:0; padding:0; width:178px; background-color:#EEEEE4; text-align:left; }
+#mainNav ul ul a { display:block; padding:6px; width:166px; background-color:#EEEEE4; color:#000; border-top:1px dotted #CCC; text-decoration:none; font-size:80%; }
+#mainNav ul ul a:hover, #mainNav ul ul a:focus { background-color:#333; color:#FFF; border-color:#999; text-decoration:underline; }
+#mainNav ul ul li.first a { border-top:0; }
+
+#mainNavClose { display:none; }
+#mainNavClose img { width:38px; height:53px; }
+#mainNavAlt { text-align:center; display:none; }
+#mainNavAlt div { width:970px; margin:0 auto; background:#FFFFFF url("/images/mn_background.gif") no-repeat top center; border:1px solid #CCCCCC; border-width:0 1px; text-align:right; }
+#mainNavAlt img { width:264px; height:53px; }
+
+#pgContent { position:relative; background-color:#FFFFFF; width:970px; margin:0 auto; border:1px solid #CCCCCC; border-width:0 1px 1px; }
+
+#subNav { width:250px; padding:0 15px; }
+#subNav h1 { background-color:#FFFFFF; border-left:1px solid #CCCCCC; color:#000000; font-size:80%; margin:2em 0 0; padding:0; }
+#subNav ul { border:1px solid #CCCCCC; border-width:0 1px; list-style:none; margin:0; padding:0; width:217px; }
+#subNav li { width:217px; }
+#subNav li.current { background-color:#666; border-bottom:1px solid #EEEEE4; border-right:1px solid #666666; color:#FFF; font-weight:bold; padding:8px 10px; width:197px; }
+#subNav li a { display:block; margin:0; padding:8px 10px; border-bottom:1px solid #EEEEE4; text-decoration:none; }
+#subNav li a:hover { background-color:#EEEEE4; border-color:#083717; }
+#subNav #browseByProgram h1 { margin-top:18px; border:0; } /* styles for established program fly-out menus... */
+#subNav #browseByProgram h1 img { width:225px; border:0; }
+#subNav #browseByProgram ul { border:0; background-color:#616264; max-width:219px; min-height:143px; width:219px; }
+#subNav #browseByProgram li a { border-color:#CCCCCC; color:#FFFFFF; font-size:110%; font-weight:bold; text-shadow:1px 1px 1px #333333; }
+#subNav #browseByProgram li a:hover { background-color:#3F3F3F; border-color:#EEEEE4; }
+#subNav #browseByProgram li.last, #subNav #browseByProgram li.last a { border-bottom:0; }
+#subNav #browseByProgram li { position:relative; }
+#subNav #browseByProgram li span { font-size:80%; font-style:italic; }
+#subNav #browseByProgram ul ul { position:absolute; top:0; left:-999em; padding:2px; background:none; background-color:#EEEEE4; border:1px solid #666; width:178px; min-height:0; }
+#subNav #browseByProgram ul ul li { width:178px; }
+#subNav #browseByProgram ul ul a { padding:6px; width:166px; background-color:#EEEEE4; color:#000000; border-bottom:1px dotted #CCC; font-weight:normal; text-shadow:none; text-decoration:none; font-size:90%; }
+#subNav #browseByProgram li.last ul a { border-bottom:1px dotted #CCC; }
+#subNav #browseByProgram li.last ul li.last a { border-bottom:0; }
+#subNav #browseByProgram ul ul a:hover, #subNav #browseByProgram ul ul a:focus { background-color:#333; color:#FFF; border-color:#999; text-decoration:underline; } /* end styles for fly-out menus */
+#subNav #browseByProgram li.current { font-size:110%; text-shadow:1px 1px 1px #333333; } /* styles to show menu for current section... */
+#subNav #browseByProgram li.current ul { position:static; top:0; left:0; background:none;background:#FFFFFF url("/images/subNav_currBackground.jpg") repeat-y right; list-style:disc; margin-top:2px; min-height:0; padding:8px 6px 0 25px; border:0; border-radius:8px 0 0 8px; color:#000000; }
+#subNav #browseByProgram li.current li { width:auto; font-weight:normal; font-size:90%; text-shadow:none; padding-bottom:8px; }
+#subNav #browseByProgram li.current li a { display:inline; padding:0; border:0; text-decoration:underline; background-color:#FFFFFF; color:#083717; font-weight:normal; font-size:100%; text-shadow:none; }
+#subNav #browseByProgram li.current li a:hover { background-color:#FFFFFF; border:0; text-decoration:none; } /* end styles for current section */
+#subNav #browseByProgram li:last-child,
+#subNav #browseByProgram li:last-child a, 
+#subNav #browseByProgram li:last-child ul li:last-child a { border-bottom:0; }
+#subNav #browseByProgram li:last-child ul a { border-bottom:1px dotted #CCC; }
+
+/* STYLES FOR THE UPCOMING EVENT SECTION UNDER THE SUB MENU (FOUND ON NDLTAP, TLN) */
+#subNav #sidebar_upcomingEvents { margin-top:1em; background:#FFF url("/images/upcoming_background.gif") repeat-y; }
+#subNav #sidebar_upcomingEvents .title img { width:225px; height:45px; }
+#subNav #sidebar_upcomingEvents ul { list-style:none; border:0; margin:10px 0 0; padding:0; }
+#subNav #sidebar_upcomingEvents li { width:200px; margin:0 0 1em; padding:0 15px; }
+#subNav #sidebar_upcomingEvents li a { display:inline; text-decoration:underline; border:0; margin:0; padding:0; }
+#subNav #sidebar_upcomingEvents li a:hover { text-decoration:none; background:none; }
+#subNav #sidebar_upcomingEvents ul ul { list-style:disc; list-style-image:url("/images/upcoming_bullet.gif"); margin:5px 0 0 25px; }
+#subNav #sidebar_upcomingEvents ul ul li { width:170px; font-size:90%; font-style:italic; margin:5px 0 0; padding:0; }
+#subNav #sidebar_upcomingEvents .fileInfo { font-style:italic; font-size:80%; }
+#subNav #sidebar_upcomingEvents .moreEvents { width:225px; margin-top:1.5em; text-align:center; font-size:110%; }
+#subNav #sidebar_upcomingEvents .reschedule { color:#FF0000; font-weight:bold; }
+#subNav #sidebar_upcomingEvents .noEvents { font-weight:normal; margin:1em 0; }
+#subNav #sidebar_upcomingEvents .noEvents span { font-weight:bold; }
+#subNav #sidebar_upcomingEvents .dbsError { font-weight:normal; font-style:italic; color:#545454; }
+
+#subNav .copyright { margin:2.5em 0 0; padding-bottom:1em; font-size:80%; color:#666666; }
+#subNav .copyright a { color:#666666; font-weight:bold; }
+
+#mainContent { width:630px; padding:32px 15px 2em; }
+#mainContent h1 { font-size:130%; font-weight:bold; color:#083717; margin-top:0; padding-bottom:5px; border-bottom:#083717 2px solid; }
+#mainContent h1 span { display:inline-block; font-size:75%; padding-bottom:3px; }
+#mainContent h2 { font-size:110%; font-weight:bold; color:#083717; margin-top:2em; }
+#mainContent h2.first { margin-top:1em; }
+#mainContent h3 { font-size:100%; font-weight:bold; }
+#mainContent fieldset { border:1px solid #CCC; border-radius:3px; }
+#mainContent fieldset legend { font-size:110%; font-weight:bold; color:#083717; }
+#mainContent fieldset div { padding:1em; }
+#mainContent fieldset ul li { margin:.3em; }
+#mainContent p { line-height:1.4em; }
+#mainContent li { line-height:1.4em; margin-bottom:.25em; }
+#mainContent .hrSec { padding-bottom:5px; border-bottom:#CCCCCC 2px solid; }
+#mainContent .pgUpdated { font-size:110%; font-style:italic; color:#666666; margin:2em 0 0; }
+#mainContent .fileInfo { font-style:italic; font-size:80%; white-space:nowrap; }
+#mainContent .addInfo { font-style:italic; font-size:80%; }
+#mainContent .systemText, #mainContent .systemText td { font-style:italic; color:#666666; }
+#mainContent .preferredMethod a { font-size:120%; font-weight:bold; }
+#mainContent .regNowButton { margin-bottom:1.5em; }
+#mainContent .regNowButton img { width:175px; height:41px; }
+#mainContent .nowrap { white-space:nowrap; }
+#mainContent .highlightText { font-size:120%; }
+#mainContent .articleSource { font-size:80%; text-align:right; margin-top:2em; }
+#mainContent .pathBack { font-size:80%; font-style:italic; margin-bottom:2em; }
+#mainContent .double li { margin-bottom:1em; }
+#mainContent .double ul { margin-top:1em; }
+#mainContent .double .normal { margin-top:2px; }
+#mainContent .double .normal li { margin-bottom:.25em; }
+#mainContent .inTableList { margin:0 0 0 1.5em; padding:0; }
+#mainContent .label { background-color:#EEEEE4; text-align:right; padding-right:5px; padding-left:5px; }
+#mainContent .endFloat { clear:both; font-size:.0000001%; }
+#mainContent .leftAlign,
+#mainContent .rightAlign { clear:both; }
+#mainContent .leftAlign img { float:left; margin:0 10px 10px 0; }
+#mainContent .rightAlign img { float:right; margin:0 0 10px 10px; }
+#mainContent .standardPageImage img { height:auto; max-width:300px; }
+#mainContent .standardPageImage > img { clear:both; float:right; margin:0 0 10px 10px; }  /* used when there isn't a caption; no SPAN tag */
+#mainContent .standardPageImage > span { clear:both; float:right; font-size:80%; font-style:italic; margin:0 0 10px 10px; max-width:300px; }  /* used for image and caption; enclose both with a SPAN tag */
+#mainContent .reportImage img { border:1px solid #9a9a9a; height:200px; width:250px; }
+#mainContent .imgBorder { border:1px solid #9a9a9a; }
+#mainContent img.errorIcon { vertical-align:middle; width:20px; height:20px; }
+#mainContent div.formError p { margin:2em 0 2px; font-weight:bold; color:#FF0000; }
+#mainContent div.formError p img { width:20px; height:20px; vertical-align:middle; padding-right:10px; }
+#mainContent div.formError ul { margin-top:0; margin-bottom:2em; }
+#mainContent .errorText { color:#FF0000; }
+#mainContent div.msgBox { background-color:#FEFDFA; border:1px solid #000000; padding:1em; margin:2.5em 1em; font-size:120%; }
+#mainContent div.msgBox p { margin:0; font-weight:bold; }
+#mainContent div.msgBox .normal { color:#000; font-style:normal; font-weight:normal; }
+#mainContent div.msgBox ul { margin:.5em 0 0 45px; padding:0; }
+#mainContent div.msgBox li { margin-bottom:.25em; }
+#mainContent .letterLinks { color:#CCCCCC; font-size:80%; margin:.5em 0; } /* used on pages like the research report filters and the SURTC transportation glossary */
+#mainContent .alphaHeaderList h2 { margin-bottom:0; }
+#mainContent .alphaHeaderList ul { list-style:none; margin:.25em 0 .25em; padding:0; }
+#mainContent .pastRecipients tr { vertical-align:top; } /* used on pages like the past abrahamson scholarship receipients */
+#mainContent .pastRecipients td { text-align:center; font-size:80%; }
+#mainContent .pastRecipients img { width:100px; height:130px; border:0; padding-bottom:2px; }
+#mainContent .embedWindow { float:right; width:288px; margin:0 0 0 1em; background-color:#000; color:#FFF; text-align:right; }
+#mainContent ul.multiColumn { list-style:none; margin:0; padding:0; }
+#mainContent ul.multiColumn li  { border-top:1px solid #e5e5e5; float:left; margin:0; padding:1em 5% 1em 0; width:40%; }
+#mainContent ul.multiColumn li:nth-child(1),
+#mainContent ul.multiColumn li:nth-child(2) { border:0; }
+#mainContent ul.multiColumn li:nth-child(odd) { clear:both; }
+
+.hide { position:absolute; left:-9999em; } /* used to hide content meant for screen readers and for those with CSS turned off */
+
+.addthis_toolbox { background-color:#EEEEE4; border-radius:8px; margin:1.5em 0 2em; padding:8px; clear:both; float:right; }
+.addthis_toolbox .addthis_separator { color:#333; }
+
+#pgFooter { clear:both; color:#666666; text-align:center; margin-top:2em; padding-bottom:1em; line-height:1.4em; }
+#pgFooter span { color:#999999; padding:0 6px; }
+#pgFooter a { color:#666666; }
+#pgFooter .footerLinks { margin-bottom:.5em; }
+#pgFooter .footerLinks a { color:#333333; }
+
+#programHeaderGraphic { clear:both; }
+#programHeaderGraphic img { width:624px; height:115px; }
+#programHeaderGraphic2 { clear:both; margin-bottom:1em; }
+#programHeaderGraphic2 img { height:98px; }
+
+#rotatingBanners { border-radius:10px; box-shadow:-1px 2px 6px 2px #666666; clear:both; float:left; height:230px; margin:1em 0 2em 5px; overflow:hidden; width:342px; }
+#rotatingBanners .graphic { margin-top:-20px; position:relative; }
+#rotatingBanners .graphic a { text-decoration:none; }
+#rotatingBanners .graphic img { height:223px; width:350px; }
+#rotatingBanners .graphic .description { background:#000000; background:linear-gradient(rgba(0,0,0,.6), #000000 40%); bottom:0; color:#FFFFFF; font-size:90%; height:50px; line-height:1.2em; overflow:auto; padding:10px 10px 0; position:absolute; right:0; width:322px; }
+#rotatingBanners .graphic .description .color { color:#de691b; font-size:85%; }
+#rotatingBanners .navigation { background:#000000; clear:both; color:#FFFFFF; min-height:22px; padding:0 5px 10px 10px; text-align:right; }
+#rotatingBanners .navigation span { color:#CCCCCC; float:left; font-size:70%; margin-top:10px; }
+#rotatingBanners .navigation img { height:22px; padding-left:10px; padding-top:5px; vertical-align:middle; width:22px; }
+
+/* quickOps - USED ON THE PROGRAM WEBSITES; THE ONES WITH THE BLUE ICONS TO THE RIGHT OF THE ROTATING AD SPACE */
+#mainContent .quickOps { float:right; list-style:none; margin:1em 30px .5em 0; padding:0; }
+#mainContent .quickOps img { width:212px; height:102px; }
+
+/* ugptiIsSpace - USED ON THE UGPTI HOME PAGE; TO THE RIGHT OF THE ROTATING AD SPACE */
+#mainContent .ugptiIsSpace { float:right; margin:0 4px 2em 0; padding:0; }
+#mainContent .ugptiIsSpace img { width:246px; height:240px; }
+
+#spotlight { background:#000000 url("/images/spotlightBack1.jpg") no-repeat top right; clear:both; border-radius:10px; box-shadow:-1px 2px 6px 2px #666666; margin:2em 0 0 5px; padding:0; width:620px; color:#FFFFFF; }
+#spotlight h1 { text-align:right; border:0; margin:0 0 1em; padding:0 23px 0 0; }
+#spotlight h1 img { height:22px; padding:30px 38px 0 0; }
+#spotlight h1 svg { padding:30px 15px 0 0; }
+#spotlight h1 svg path { filter:drop-shadow(1.5px 1.5px 0px rgb(0 0 0 / 0.9)) drop-shadow(-1px -1px 3px rgb(0 0 0 / 0.9)); }
+#spotlight h1 svg.head1 { width:270px; }
+#spotlight h1 svg.head1 path { fill:#F1BB29; }
+#spotlight h1 svg.head2 { width:100px; }
+#spotlight h1 svg.head2 path { fill:#D4D3D3; }
+#spotlight ul { list-style:none; margin:30px; padding:0; }
+#spotlight li { margin:0 0 2.5em 120px; padding:0; clear:both; }
+#spotlight li img { width:99px; height:91px; border:0; border-radius:3px; margin:0 0 0 -120px; float:left; }
+#spotlight p { margin:30px; padding:0; } /* used for database connection error */
+#spotlight a { color:#FFFFFF; }
+#spotlight div.title { font-weight:bold; border-bottom:1px solid #c19b18; margin:0 0 2px; padding:0 0 2px; }
+#spotlight div.title a { color:#E2D29A; font-weight:bold; text-decoration:none; }
+#spotlight div.title a:hover { text-decoration:underline; }
+#spotlight div.posted { font-style:italic; font-size:70%; color:#CCCCCC; margin:0 0 8px; }
+#spotlight .pin { background-color:#205022; border-radius:4px; margin-right:5px; padding:1px 5px; }
+#spotlight span.author { margin:0 0 3px; font-style:italic; font-size:80%; }
+#spotlight .moreInfo { font-size:80%; }
+#spotlight .moreInfo a { margin:0 2px; }
+#spotlight .subscribe { text-align:right; clear:left; margin:0 30px 20px; padding:1.5em 0; }
+#spotlight .subscribe img { border:0; vertical-align:middle; float:none; height:68px; }
+
+/* STYLES FOR STANDARD DATA TABLES */
+.dataTable { margin:2em 0; }
+.dataTable caption { text-align:left; }
+.dataTable caption span { font-weight:bold; }
+.dataTable table { border:1px solid #CCC; border-collapse:collapse; }
+.dataTable tr { vertical-align:top; }
+.dataTable th,
+.dataTable td { border:1px solid #CCC; padding:6px; }
+.dataTable .noborder { border:0; }
+.dataTable table.centerAll td { text-align:center; }
+.dataTable table.rightAll td { text-align:right; }
+.dataTable table.centerAll .left,
+.dataTable table.rightAll .left { text-align:left; }
+.dataTable td.center { text-align:center; }
+.dataTable th,
+.dataTable td.th,
+.dataTable tr.th td { background-color:#F5F5F5; font-weight:bold; text-align:center; }
+.dataTable td.thnc,
+.dataTable tr.thnc td { background-color:#F5F5F5; font-weight:bold; }
+.dataTable th.plain { background-color:#FFFFFF; font-weight:normal; text-align:left; }
+.dataTable th.left { text-align:left; }
+.dataTable .source { font-style:italic; margin-top:2px; }
+.dataTable .topLink { font-size:80%; padding:0 5px 15px 0; text-align:right; }
+.dataTable ul { margin:0 0 0 2em; padding:0; }
+
+/* STYLES TO FLOAT THE RELATED LINKS MENU TO THE RIGHT */
+#mainContent .wrapper { position:relative; height:1%; padding-right:200px; }  /* used to float the related links box -- don't need if you use a table to position the box */
+#mainContent div.relatedLinks { position:absolute; top:0; right:0; background-color:#FFFFFF; width:180px; }  /* used to float the related links box -- don't need if you use a table to position the box */
+#mainContent .subMenu { border:1px solid #CCCCCC; width:180px; margin-bottom:1em; }
+#mainContent .subMenu h2 { background-color:#205A5A; color:#FFFFFF; font-weight:bold; font-size:100%; padding:5px; margin:0; }
+#mainContent .subMenu ul { margin:7px 9px 9px 27px; padding-left:0; }
+#mainContent .subMenu li { margin-bottom:.3em; }
+#mainContent .subMenu div { margin:1em; }
+#mainContent .subMenu p { margin:1em; }
+#mainContent .subMenu_float { clear:right; float:right; margin:0 0 1em 1em; }
+#mainContent .subMenu_highlight { background:#4a7b57 url("/images/subMenu_highlightBackground.gif") top left no-repeat; border-color:#155726; border-radius:4px; color:#FFFFFF; width:190px; }
+#mainContent .subMenu_highlight h2 { background-color:#155726; }
+#mainContent .subMenu_highlight ul { margin:10px 12px 12px 30px; }
+#mainContent .subMenu_highlight a { color:#FFFFFF; }
+#mainContent .subMenu_highlight .highlightText { font-weight:bold; }
+#mainContent .subMenu_highlight .fileInfo { color:#cdcdcd; font-size:70%; }
+#mainContent .subMenu_noBullet ul { list-style:none; margin:0; padding:0; }
+#mainContent .subMenu_noBullet ul li { margin:0; padding:0; }
+#mainContent .subMenu_noBullet ul a { border-top:1px solid #075007; clear:both; display:block; padding:8px; text-decoration:none; }
+#mainContent .subMenu_noBullet li:first-child a { border:0; }
+#mainContent .subMenu_noBullet ul a:hover { background-color:#075007; }
+#mainContent .subMenu_noBullet .highlightText .fileInfo { font-size:70%; font-weight:normal; }
+#mainContent .subMenu_noBullet img { float:right; vertical-align:middle; }
+#rightCol div { margin-left:2em; }  /* used for table positioning -- don't need if you use the .wrapper class to float the box */
+#rightCol div div { margin-left:0; }
+
+/* STYLES FOR LISTING EVENTS (E.G. TRANSPORTATION SEMINAR PAGES) */
+#mainContent div.eventList { border:1px solid #CCCCCC; background-color:#FFFFFF; margin:2em 0; }
+#mainContent div.eventList h2 { background-color:#205A5A; color:#FFFFFF; font-weight:bold; font-size:100%; padding:5px; margin:0; }
+#mainContent div.eventList p { margin:1em; }
+#mainContent div.eventList ol,
+#mainContent div.eventList ul { list-style:none; margin:0; padding:0; }
+#mainContent div.eventList li { padding:1em; border-top:1px solid #EEEEE4; }
+#mainContent div.eventList .title { font-weight:bold; font-size:100%; margin-bottom:0; }
+#mainContent div.eventList .date { font-weight:bold; font-style:italic; }
+#mainContent div.eventList .date span { font-weight:normal; }
+
+/* STYLE FOR DETAIL PAGES (E.G. MPC PROJECT DETAILS PAGE)  */
+table.detailsTable td { padding:3px; }
+table.detailsTable td:first-child { background-color:#EEEEE4; min-width:150px; text-align:right; padding-right:5px; padding-left:5px; }
+table.detailsTable td > ul { margin:0; margin-left:1.5em; padding:0; }
+
+/* STYLES FOR CONTACT LISTS WHICH HAVE A TWO-COLUMN LAYOUT; SEE STAFF PAGE (RIGHT COLUMN FOR NAME AND TITLE; LEFT FOR THE CONTACT INFO) */
+#mainContent .contactList { border-collapse:collapse; }
+#mainContent .contactList tr.first td { border-top:0; margin:0; }
+#mainContent .contactList tr:first-child td { border-top:0; margin:0; }
+#mainContent .contactList td { border:1px solid #EEEEE4; border-width:1px 1px 0 0; margin:0; padding:1.5em 1em 1.5em 0; width:50%; }
+#mainContent .contactList td.contactInfo { border-width:1px 0 0 1px; padding-left:1em; }
+#mainContent .contactList td.vcard { font-size:60%; font-weight:bold; color:#999; border-width:1px 0 0; }
+#mainContent .contactList td.vcard a { text-decoration:none; color:#999; }
+#mainContent .contactList td.vcard img { margin-bottom:2px; }
+#mainContent .contactList img { border-radius:3px; float:left; height:65px; margin:0 8px 0 0; width:50px; }
+#mainContent div.bioContactInfo { padding-left:120px; }
+#mainContent div.bioContactInfo img { height:130px; float:left; margin-left:-120px; width:100px; }
+#mainContent div.bioContactInfo span { font-weight:bold; }
+#mainContent div.bioContactInfo .endFloat { clear:left; }
+
+/* STYLES FOR CONTACT LISTS WHICH HAVE A TWO-COLUMN LAYOUT; SEE ADVISORY COUNCIL PAGE (RIGHT COLUMN FOR A PICTURE; LEFT FOR NAME AND CONTACT INFO) */
+#mainContent ul.contactListPicture { margin:0; list-style:none; padding:0; }
+#mainContent ul.contactListPicture li { clear:both; padding:1em 0 0 120px; }
+#mainContent ul.contactListPicture li:first-child { padding-top:0; }
+#mainContent ul.contactListPicture li img { border:1px solid #9a9a9a; height:130px; float:left; margin-left:-120px; width:100px; }
+#mainContent ul.contactListPicture .name { color:#000000; font-weight:bold; }
+#mainContent ul.compactView li { padding-left:90px; } /* .compactView is used in conjuction with .contactListPicture; see DOTSC's erosion control page for an example (www.ugpti.org/dotsc/training/erosion-control/) */
+#mainContent ul.compactView li img { border-radius:3px; height:90px; margin-left:-90px; width:69px; }
+
+/* STYLES TO REPLICATE A TABLE OF IMAGES (E.G. AWARDS RECIPIENT PAGES) */
+#mainContent .imageGrid { list-style:none; margin:0; padding:0; width:360px; }
+#mainContent .imageGrid li { float:left; font-size:80%; margin:0 10px 10px; text-align:center; width:100px; }
+#mainContent .imageGrid li.clearFloat { clear:left; }
+#mainContent .imageGrid img { width:100px; height:130px; margin-bottom:1px; }
+#mainContent .imageGridLink { font-weight:bold; margin:1em 0 3em; text-align:center; width:348px; }
+
+/* IMAGE LAYOUT -- THREE COLUMN LAYOUT (E.G. SURCOM ELEARNING PAGE) */
+#mainContent .imageLayout_columns { clear:both; }
+#mainContent .imageLayout_columns > .column { float:left; margin:0 0 12px 12px; width:202px; }
+#mainContent .imageLayout_columns > .column:nth-child(3n-2) { margin-left:0; } /* every 3rd item, starting with the first */
+#mainContent .imageLayout_columns > .column > .content { background:linear-gradient(160deg, #E3E3E3, #FFFFFF 60%); border:1px solid #E3E3E3; border-bottom:0; border-radius:4px 4px 0 0; max-height:170px; min-height:170px; overflow:hidden; padding:150px 10px 10px; position:relative; }
+#mainContent .imageLayout_columns > .column > .content > img { left:0; height:auto; position:absolute; top:-20px; width:200px; }
+#mainContent .imageLayout_columns > .column > .content > .imgPlaceholder { background-color:#E3E3E3; height:140px; left:0; position:absolute; top:0; width:200px; }
+#mainContent .imageLayout_columns > .column > .content > h2 { color:#000000; font-size:100%; margin:0 0 5px; }
+#mainContent .imageLayout_columns > .column > .bottomCap { background-color:#083717; background:linear-gradient(165deg, #004712 40%, #083717); border:1px solid #E3E3E3; border-radius:0 0 4px 4px; border-top:0; text-align:center; width:200px; }
+#mainContent .imageLayout_columns > .column > .bottomCap > a { color:#FFFFFF; display:block; padding:10px; }
+
+/* IMAGE LAYOUT -- STANDARD IMAGE ROW ENTRIES */
+#mainContent ul.imageLayout_rows { list-style-type:none; margin:0; padding:0; }
+#mainContent ul.imageLayout_rows > li { margin:0; }
+#mainContent ul.imageLayout_rows > li > img { border:1px solid #9a9a9a; float:left; height:80px; width:100px; }
+#mainContent ul.imageLayout_rows > li > .imgPlaceholder { background-color:#E3E3E3; border:1px solid #9a9a9a; float:left; height:80px; width:100px; }
+#mainContent ul.imageLayout_rows > li > span { border-left:1px solid #CCC; display:block; margin-left:120px; min-height:100px; padding:0 0 1.5em 20px; }
+#mainContent ul.imageLayout_rows > li:last-child > span { padding-bottom:0; }
+
+/* RESEARCH REPORT SEARCH STYLES */
+.searchResults { border:1px solid #000000; border-width:1px 0; }
+.searchResults div { padding:15px; border-top:1px solid #7E7E7E; }
+.searchResults div div { border:0; padding:0; }
+.searchResults div.odd { background-color:#EEEEE4; }
+.searchResults div.searchTools { background-color:#19632D; background-image:linear-gradient(45deg, #19632D, #4A7B57); border:0; box-shadow:inset 0 0 50px #064718; color:#FFFFFF; padding:8px; }
+.searchResults div.searchTools a { color:#FFFFFF; }
+.searchResults div.searchTools span { margin:0 40px 0 4px; }
+.searchResults div.searchTools .pgNumbers { font-size:110%; margin:0; }
+.searchResults div.searchTools .pgNumbers img { height:24px; vertical-align:middle; width:24px; }
+.searchResults div.searchTools form { background-color:#0A481B; border-radius:6px; margin:2px 0 0; padding:4px; }
+.searchResults div.searchStats { background-color:#19632D; background-image:linear-gradient(45deg, #19632D, #4A7B57); border:0; box-shadow:inset 0 0 50px #064718; color:#FFFFFF; padding:10px; text-align:center; }
+.searchResults div.searchStats a { color:#FFFFFF; }
+.searchResults div.searchStats span { font-weight:bold; }
+.searchResults div.articleTitle { margin-bottom:5px; padding:0; border:0; font-weight:bold; }
+.searchResults div.articleTitle .addInfo { font-weight:normal; }
+.searchResults div.articleTitle .fileInfo { font-weight:normal; }
+.searchResults div.authorNames { font-size:80%; color:#333; }
+.searchResults div.keywords { font-size:80%; color:#333; }
+.searchResults div p { margin:.5em 0 0; padding:0; }
+.searchResults div p span { font-weight:bold; }
+.shopCart { padding:7px 5px; text-align:right; }
+.shopCart img { width:116px; height:21px; border:0; }
+.pgNumbers { padding:5px; text-align:right; font-size:110%; }
+.downloadButtons img { width:136px; height:45px; border:0; }
+.downloadButtons form { display:inline; margin:0; }
+.citation { padding-left:22px; text-indent:-22px; }
+
+/* RESULT LIST - DISPLAYS LIKE REPORT SEARCH RESULTS */
+#mainContent .resultList { margin-bottom:2em; }
+#mainContent .resultList h2 { background-color:#19632D; background-image:linear-gradient(45deg, #19632D, #4A7B57); border:0; box-shadow:inset 0 0 50px #064718; color:#FFFFFF; font-size:100%; margin:0; padding:10px; }
+#mainContent .resultList ul { list-style:none; padding:0; margin:0; }
+#mainContent .resultList li { border-bottom:1px solid #7E7E7E; margin:0; padding:15px; }
+#mainContent .resultList li.odd { background-color:#EEEEE4; } /* LEGACY CODE -- DO NOT USE */
+#mainContent .resultList li:nth-child(odd) { background-color:#EEEEE4; }
+#mainContent .resultList .title { border:0; font-weight:bold; margin-bottom:5px; padding:0; }
+#mainContent .resultList .title .addInfo { font-weight:normal; }
+#mainContent .resultList .title .fileInfo { font-weight:normal; }
+#mainContent .resultList .keywords { font-size:80%; color:#333; }
+#mainContent .resultList .sectionOptions { background-color:#19632D; background-image:linear-gradient(45deg, #19632D, #4A7B57); border:0; box-shadow:inset 0 0 50px #064718; color:#FFFFFF; font-size:100%; margin:0; padding:10px; }
+#mainContent .resultList .sectionOptions a { color:#FFFFFF; }
+
+/* CONFERENCE STYLES */
+#agenda { background-color:#FFFFFF; border:1px solid #CCCCCC; border-width:0 1px 1px 1px; }
+#agenda tr { vertical-align:top; }
+#agenda td { padding:10px; }
+#agenda td { padding:10px; }
+#agenda ul { margin-top:2px; margin-bottom:2px; padding-top:2px; padding-bottom:2px; }
+#agenda .date { background-color:#EEEEE4; }
+#agenda .date td { padding:10px 5px; font-weight:bold; border-top:1px solid #000000; }
+#agenda .time { white-space:nowrap; }
+.presDivider { border-top:2px solid #CCCCCC; padding-top:.5em; margin-top:2em; }
+.presDivider a { font-weight:bold; }

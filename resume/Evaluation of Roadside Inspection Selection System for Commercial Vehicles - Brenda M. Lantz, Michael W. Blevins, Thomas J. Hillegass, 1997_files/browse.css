@@ -1,0 +1,394 @@
+<style type="text/css">
+.browseHeading h1{
+	font-size:25px;
+	text-align:center;
+}
+.browseLeftColumn {
+	display:inline-block;
+	width:100%;
+	margin-top:15px;
+}
+.subjectsHeader .paginationControl {
+	display:none;
+}
+.subjectsHeader {
+	display:flex;
+}
+.browsePublications .results thead {
+	display:none;
+}
+.browsePublications legend {
+	display:none;
+}
+.browsePublications tr:nth-child(2n+1) {
+	background:#f7f7f7 none repeat scroll 0 0;
+}
+.SAGEBrowse {
+	margin-top:10px;
+}
+.SAGEBrowse .mainColumn a, .browseDescription {
+	font-size:16px;
+}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front {
+	width:auto !important;
+	padding:0;
+    left:10vw !important;
+	z-index:38999;
+}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front .add-alerts-dialog {
+	padding:0;
+}
+.add-alerts-dialog > form > table > thead label {
+	display:inline-block;
+}
+.add-alerts-dialog {
+	min-width:40vw;
+	max-width:80vw;
+}
+.SAGEBrowse .mainColumn .add-alerts {
+	background-color:#ac2226;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-webkit-appearance:none;
+	color:white;
+	font-size:16px;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+}
+.SAGEBrowse .mainColumn .add-favorites {
+	color:#006acc;
+	margin-left:-75px;
+	text-align:center;
+	margin-top:20px;
+}
+.SAGEBrowse .mainColumn .add-favorites::before {
+	content:url("/pb-assets/Icons/Favourites.png");
+	height:50px;
+	margin-left:40px;
+	margin-right:7px;
+	padding-bottom:7px;
+	padding-left:25px;
+	padding-top:7px;
+}
+.SAGEBrowse .browsePublications td {
+	height:52px;
+}
+.SAGEBrowse .browsePublications td:first-child {
+	width:35px;
+}
+.SAGEBrowse .results table {
+	border-bottom:2px solid #eeeeee;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.SAGEBrowse .results {
+	border-top:1px solid #CCCCCC;
+}
+.SAGEBrowse .actions {
+	display:flex;
+	flex-direction:column;
+	width:100%;
+}
+.SAGEBrowse .paginationControlBottom .centered.linkList {
+	text-align:left;
+	display:flex;
+}
+.SAGEBrowse .paginationControlBottom .centered.linkList .pageLinks, .paginationControlBottom li span {
+	display:none;
+}
+.SAGEBrowse .paginationControl li a {
+	background-color:#ffffff;
+	border:1px solid #b5b5b5;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-webkit-appearance:none;
+	color:#333333;
+	font-size:14px;
+	padding:7px 7px !important;
+	text-align:center;
+}
+.SAGEBrowse .paginationControl .selected {
+	background-color:#796c83;
+	border:1px solid #b5b5b5;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-webkit-appearance:none;
+	color:#FFFFFF;
+	font-size:14px;
+	padding:7px 12px;
+}
+.SAGEBrowse .paginationControl {
+	background-color:#f7f7f7;
+	float:none;
+	margin-top:45px;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:10px;
+	padding-right:10px;
+	width:calc(100% - 10px);
+}
+.SAGEBrowse .linkList li {
+	padding:0;
+}
+.paginationControlBottom .lastPage, .paginationControlBottom .first-page-pagination, .paginationControlBottom .goTo.page {
+	display:none;
+}
+.browsePublications .mainColumn, .browsePublications .leftColumn {
+	width:100%;
+	float:none;
+}
+.browsePublications .leftColumn .filterAlphabet fieldset, .browsePublications .leftColumn .filterSubjects fieldset {
+	border:medium none;
+	margin-left:0;
+	padding:0;
+	width:100%;
+	text-align:center;
+}
+.filterAlphabet option {
+	text-align:center;
+}
+.filterAlphabet .inlineRadio {
+	display:none;
+}
+.browsePublications .mainColumn form input[type="checkbox"] {
+	margin-left:10px;
+	margin-right:10px;
+}
+.alphaLinksAllLink a {
+	background-color:#ac2226;
+	color:#ffffff;
+	font-weight:normal;
+	padding:5px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-webkit-appearance:none;
+}
+.alphaLink {
+	color:#333333;
+	font-size:16px;
+	margin-left:6px;
+}
+.browsePublications .alphaLinks {
+	display:inline-block;
+	width:auto;
+	float:none;
+}
+.browsePublications .alphaLinks a {
+	color:#006acc;
+}
+.topBrowseAd, .bottomBrowseAd {
+	float:right;
+}
+.topBrowseAd {
+	margin-bottom:30px;
+}
+.parentCategories, .subCategories, .filterAlphabet select {
+	width:290px;
+	color:#55555;
+	font-size:16px;
+}
+.parentCategories, .subCategories {
+	margin-bottom:20px;
+}
+.filter-publications .ui-autocomplete-input, .parentCategories, .subCategories, .filterAlphabet select {
+	border:1px solid #cccccc;
+	margin-left:10px;
+}
+.filter-publications .ui-autocomplete-input, .paginationControlBottom .goTo input, .parentCategories, .subCategories, .filterAlphabet select {
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	font-size:16px;
+	padding:7px;
+}
+.filter-publications .ui-autocomplete-input, .paginationControlBottom .goTo input {
+	-webkit-appearance:none;
+}
+.filter-publications .ui-autocomplete-input, .paginationControlBottom .goTo input {
+	color:#888888;
+}
+.SAGEBrowse .paginationControlBottom .goTo input {
+	padding-bottom:5px;
+	padding-top:5px;
+	border:1px solid #b5b5b5;
+	margin-left:5px;
+}
+.SAGEBrowse .paginationControlBottom input#submitPageForm:hover,
+.SAGEBrowse .paginationControlBottom input#submitPageForm:focus,
+.SAGEBrowse .paginationControlBottom input#submitPageForm:active {
+	text-decoration:underline;
+	cursor:pointer;
+}
+.paginationControlBottom #pageNumber {
+	width:20px;
+	height:20px;
+}
+.paginationControlBottom .goTo {
+	display:inline-flex;
+	float:right;
+}
+.SAGEBrowse .paginationControl .pageLink-with-arrow a {
+	display:inline-block;
+	width:calc(100% - 25px);
+}
+.paginationControlBottom .pageLink-with-arrow {
+	width:calc(100% - 25px);
+}
+.browsePublications .pageLink-with-arrow {
+	min-width:35px !important;
+}
+.paginationControlBottom .goTo:before {
+	content:"Go to page:";
+	font-size:14px;
+	color:#333333;
+	align-self:center;
+}
+#submitPageForm {
+	background-color:#796c83;
+	color:#ffffff;
+	font-weight:bold;
+}
+.category-selector-form .parentCategoryTitle, .filter-publications label {
+	color:#333333;
+	font-size:16px;
+	font-weight:bold;
+}
+.category-selector-form .parentCategoryTitle {
+	display:none;
+}
+.category-selector-form {
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+}
+#browsePublicationsForm table {
+	border-collapse:collapse;
+}
+@media (min-width:768px) {
+	.add-alerts-dialog {
+		min-width:30vw;
+	}
+	.browseHeading h1{
+		font-size:32px;
+		text-align:left;
+	}
+	.issue-selector-section span:last-of-type {
+		margin-left:auto;
+	}
+	.category-selector-form {
+		flex-direction:row;
+	}
+	.SAGEBrowse .subjectsHeader .actions {
+		margin-top:10px;
+		margin-bottom:25px;
+		margin-left:auto;
+	}
+	.SAGEBrowse .actions {
+		display:block;
+		text-align:center;
+	}
+	.SAGEBrowse .mainColumn .add-favorites::before {
+		border-left:1px solid #cccccc;
+	}
+	.SAGEBrowse .mainColumn .add-alerts {
+		font-size:14px;
+		font-weight:normal;
+	}
+	.SAGEBrowse .mainColumn .add-favorites {
+		margin-left:inherit;
+		text-align:inherit;
+		margin-top:inherit;
+	}
+	.browsePublications .mainColumn form input[type="checkbox"] {
+		margin-left:75px;
+	}
+	.SAGEBrowse .browsePublications td:first-child {
+		width:110px;
+	}
+	.category-selector-form .parentCategoryTitle {
+		display:inline-block;
+	}
+	.parentCategories, .subCategories {
+		width:auto;
+	}
+	.parentCategories, .subCategories {
+		margin-bottom:0;
+	}
+	.filter-publications .ui-autocomplete-input, .paginationControlBottom .goTo input, .parentCategories, .subCategories {
+		font-size:14px;
+	}
+	.SAGEBrowse .results {
+		border-top:none;
+	}
+	.browsePublications .inlineRadio {
+		border-bottom:2px solid #eeeeee;
+		margin-top:30px;
+		padding-bottom:30px;
+	}
+	.SAGEBrowse .results table {
+		margin-top:initial;
+	}
+	.filterAlphabet .inlineRadio {
+		display:block;
+	}
+	.filterAlphabet select {
+		display:none;
+	}
+	.SAGEBrowse .paginationControl .pageLink-with-arrow a {
+		color:transparent;
+	}
+	.SAGEBrowse .nextPage {
+		background:rgba(0, 0, 0, 0) url("/pb-assets/Icons/next-arrow.png") no-repeat scroll center center;
+	}
+	.SAGEBrowse .previousPage {
+		background:rgba(0, 0, 0, 0) url("/pb-assets/Icons/previous-arrow.png") no-repeat scroll center center;
+	}
+	.SAGEBrowse .paginationControlBottom .centered.linkList {
+		display:block;
+	}
+	.SAGEBrowse .paginationControlBottom .centered.linkList .pageLinks, .SAGEBrowse .paginationControlBottom .centered.linkList .pageLink-with-arrow, .paginationControlBottom .goTo.page, .paginationControlBottom li span {
+		display:inline-flex;
+	}
+	.SAGEBrowse .paginationControl li a, .SAGEBrowse .paginationControl .pageLink-with-arrow a,
+	.SAGEBrowse .paginationControl .first-page-pagination a,
+	.SAGEBrowse .paginationControl .lastPage a
+	{
+		width:33px;
+		padding:7px 0 !important;
+	}
+	.paginationControlBottom .pageLink-with-arrow {
+		width:auto;
+	}
+	.pageLink-with-arrow:first-of-type {
+		margin-right:0;
+	}
+	.SAGEBrowse .actions {
+		width:inherit;
+	}
+}
+@media (min-width:1000px) {
+	.browseLeftColumn {
+		display:inline-block;
+		vertical-align:top;
+		width:66%;
+	}
+	.browseRightColumn {
+		display:inline-block;
+		width:33%;
+		float:right;
+	}
+}
+@media (min-width:1120px) {
+	.alphaLink {
+		margin-left:9px;
+	}
+	.add-alerts-dialog form input[type="checkbox"], .browsePublications .mainColumn form input[type="checkbox"]{
+		transform:scale(1.2);
+	}
+}
+@media (min-width:1600px) {
+	.add-alerts-dialog form input[type="checkbox"], .browsePublications .mainColumn form input[type="checkbox"]{
+		transform:scale(1.0);
+	}
+}
+</style>
