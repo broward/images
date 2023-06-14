@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* font awesome for icons */
+.fa, i.fa{
+    font-family: 'FontAwesome' !important;
+}
+
+
 /**** header css ****/
 .restore p{
     word-break: break-word;
@@ -232,8 +241,19 @@ div.bootstrap .mainNavWrapper .navbar .navbar-left .dropdown-menu{
     padding:5px 0 !important;
     border:1px solid #eee;
 }
+div.bootstrap .mainNavWrapper #AccountMenu li {
+    padding: 4px 10px !important;
+}
+div.bootstrap .mainNavWrapper #AccountMenu > li:first-child {
+    padding: 0 !important;
+}
 div.bootstrap #MegaNavbar .dropdown-menu li a{
     font-size: 1.0rem !important;
+    text-transform: capitalize !important;
+}
+
+.actMenu li ul li a{
+    border-bottom: 0 !important;
 }
 .show button.btn.btn-block.btn-info.dropdown-toggle:before, .open button.btn.btn-block.btn-info.dropdown-toggle:before{
     content: "";
@@ -743,7 +763,7 @@ form#profileform .rightcol {
     padding-bottom: 5px;
     margin: 0 0;
     color: #444;
-    font-family: 'Rubik', sans-serif !important;
+    font-family: 'Barlow', sans-serif !important;
 }
 
 .fc-body #usercp_nav .blockrow li.active a { 
@@ -848,27 +868,35 @@ ul#incomingreqs {
 }     
 
 /* 9 july 2020 end code css */ 
-
+button#search_button span#search_span {
+    top: 7px !important;
+    right: 11px !important;
+}
 
 @media (min-width: 768px){
     .theme2 .header-search-wrapper form{
     background-color:#121212;
 }
+div#header-search-wrapper {
+    margin-right: 5px !important;
+}
 div.bootstrap .nav > .h-s-container{
     position: relative !important;
 }
 .h-s-container #search_button{
-    top: -17px;
+    top: -18px;
 }
 div.bootstrap .nav > .h-s-container .header-search.header-search.header-search{
-    background-color:#fff !important;
+    /* background-color:transparent !important; */
+    background-color: #1d242b !important;
+    color: #fff;
 }
 .theme2 div.bootstrap .nav > .h-s-container .header-search.header-search.header-search{
     background-color:transparent !important;  
 }
 .header-search-wrapper{
     position: absolute;
-    right: 0px;
+    right: -5px;
 }
 }
 .notfications-empty{
@@ -916,8 +944,6 @@ div.bootstrap .mainNavWrapper .widget-notifications .notifications-link.notifica
 
 #backtotop{
     cursor:pointer;
-<<<<<<< HEAD
-=======
 }
 html{
     scroll-behavior: smooth;
@@ -1219,7 +1245,7 @@ padding-left: 20px !important;
     border-radius: 15px !important;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-    font-family: "Rubik", sans-serif !important;
+    font-family: 'Barlow', sans-serif !important;
 }
 .mj-nav .mj-navbar_right{
     /*  background-color: #fff !important;*/
@@ -1422,6 +1448,7 @@ color: #333 !important;
     float:none;
     display: block;
     text-align: center;
+    white-space: normal;
 }
 #pollinfo .block{
     text-align: center;
@@ -3180,7 +3207,6 @@ div.bootstrap .mainNavWrapper #AccountMenu li a.avatar span.img{
   #usercp_nav#usercp_nav{
     width: 100% !important;
   }
->>>>>>> parent of fe7d0790... update tg-custom.css
 }
 
 
@@ -3441,3 +3467,56 @@ Setting Moderation deleted items
 }
 
 /*14 aug 2020 end code css*/ 
+
+/*29 jul 2022 start code css*/ 
+
+.gamesPage .PlatformCheck .span1{
+word-break: break-word !important;
+}
+.theme2 .bg-dust{
+  background-color:#24252e !important;
+  display: none;
+}
+.bg-dust.seven-by-nine,
+.seven-by-nine{
+    display: none;
+}
+
+/*29 jul 2022 end code css*/ 
+
+
+/* 30.12.2022 */
+.mj-nav .navbar-light .navbar-nav .dropMenuLi ul.dropdown-menu > li {
+    position: relative;
+}
+.mj-nav .navbar-light .navbar-nav .dropMenuLi ul.dropdown-menu > li a{
+    padding: 7px 5px !important;
+}
+/* .mj-nav .navbar-light .navbar-nav .dropMenuLi ul.dropdown-menu > li:before {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    content: '';
+    background: #0f45a9;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9;
+} */
+
+
+/* 30.12.2022 end */
+
+.header-search-wrapper {
+    margin-right: 0;
+}
+
+.edit-comment .section-heading {
+    background: transparent;
+    margin: auto 0 0 0 !important;
+    padding: 0;
+}
+
+.comment-box .blockbody.formcontrols{
+    padding: 0;
+}

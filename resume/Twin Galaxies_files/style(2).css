@@ -7192,7 +7192,7 @@ body a:hover
     background: white;
     width: 100% !important;
     font-weight: 500;
-    border: 1px solid rgba(17,17,17,0.15);
+    border: 1px solid rgba(17,17,17,0.75);
 }
 
 .theme2 .form-control
