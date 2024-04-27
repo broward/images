@@ -1,7 +1,14 @@
 Bathroom
 
-sink: 9" x 19"
+replacement sink: 9" x 19"
 
 https://www.build.com/product/summary/1666506?uid=3938441
+
+move toilet north by 6 to 8 inches
+
+floor - replace linoleum with matching kitchen tile
+4' x 7' = 28 sq ft
+
+walls - (4 + 4 + 7 + 5) x 6ft high = 120 sq ft
 
 
