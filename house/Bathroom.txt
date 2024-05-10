@@ -8,13 +8,19 @@ move toilet north by 6 to 8 inches
 floor - replace linoleum with matching kitchen tile
 4' x 7' = 28 sq ft
 
-walls - (4 + 4 + 7 + 5) x 6ft high = 120 sq ft
+walls - (4' + 4' + 7' + 5') x 6' high = 120 sq ft
+
+148 sq ft total + 15% waste = 180 sq ft
 
 
-East - 45%
-Northwest - 38% 
+East - 99%
+North - 74%
+Northwest - 37% 
 
 
 
+
+simple resume: https://broward.ghost.io/golddigr/author/
+full resume: https://broward.ghost.io/resume
 
 
