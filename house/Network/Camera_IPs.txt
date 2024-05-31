@@ -1,0 +1,7 @@
+North IP: 8A-AA
+East IP: 14-87
+South IP: AE-20
+Barn IP: 9E-74
+West IP: 44-99
+Northwest: 15-OE
+Office IP: 42-CB
